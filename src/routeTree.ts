@@ -1,5 +1,5 @@
-import { rootRoute } from './pages/__root';
-import { SignInRoute } from './pages/sign-in';
+import { rootRoute } from '@/pages/__root';
+import { SignInRoute } from '@/pages/sign-in';
 // import { LayoutRoute } from './pages/_layout';
 // import { IndexRoute } from './pages';
 
