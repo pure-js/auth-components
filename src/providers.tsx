@@ -7,7 +7,7 @@ const router = new Router({
   defaultPreload: 'intent',
 });
 
-export const Providers = ({ children }: { children: React.ReactNode }) => {
+export const Providers = ({ children }: { children?: React.ReactNode }) => {
   return (
     <>
       <RouterProvider router={router} />
