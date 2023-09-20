@@ -1,12 +1,16 @@
 import { Route } from '@tanstack/react-router';
-import { rootRoute } from './__root';
+import { rootRoute } from '../__root';
+
+import classes from './index.module.scss';
 
 export const SignInPage = () => {
   return (
     <section>
       <input type="text" />
       <input type="password" />
-      <button type="button">Log in</button>
+      <button className={classes.btn} type="button">
+        Log in
+      </button>
     </section>
   );
 };
