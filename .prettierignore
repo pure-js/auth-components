@@ -1,0 +1,8 @@
+# PNPM package manager
+pnpm-lock.yaml
+
+# Artifacts
+dist
+
+# TypeScript Configuration
+# tsconfig.json
