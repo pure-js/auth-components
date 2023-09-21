@@ -11,6 +11,10 @@ export default defineConfig({
         replacement: '/src/components',
       },
       {
+        find: '@/services',
+        replacement: '/src/services',
+      },
+      {
         find: '@/pages',
         replacement: '/src/pages',
       },
