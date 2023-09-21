@@ -7,16 +7,16 @@ import { rootRoute } from '@/pages/__root';
 
 export const SignInPage = () => {
   return (
-    <Form>
+    <Form onSubmit={() => {}}>
       <Input type="text" />
-      <Input type="password" />
-      <Button label="Log in" />
+      <Input type="password" minLength={8} />
+      <Button primary size="large" onClick={() => {}} label="Log in" />
     </Form>
   );
 };
 
 export const SignInRoute = new Route({
   getParentRoute: () => rootRoute,
-  path: '/',
+  path: '/sign-in',
   component: SignInPage,
 });
