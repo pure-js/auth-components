@@ -1,10 +1,13 @@
-import { Outlet, Link } from '@tanstack/react-router';
-export const Home = () => (
+import { FileRoute } from '@tanstack/react-router';
+
+import { SortableTable } from '@/components/sortable-table';
+
+export const HomePage = () => (
   <>
-    <div>
-      <Link to="/">Home</Link> <Link to="/about">About</Link>
-    </div>
-    <hr />
-    <Outlet />
+    <SortableTable />
   </>
 );
+
+export const HomeRoute = new FileRoute('/').createRoute({
+  component: HomePage,
+});

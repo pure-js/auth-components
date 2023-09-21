@@ -21,14 +21,6 @@ export const rootRoute = new RootRoute({
         >
           Sign In
         </Link>
-        <Link
-          to="/layout-a"
-          activeProps={{
-            className: 'font-bold',
-          }}
-        >
-          Layout
-        </Link>
       </div>
       <hr />
       <Outlet />
