@@ -16,6 +16,8 @@
 
 In the project directory, you can run:
 
+> Please note that we are using `pnpm` but you can also use `npm` and everything will work fine, just a bit slower
+
 ### `pnpm start`
 
 Runs the app in the development mode.\
@@ -24,10 +26,9 @@ Open [http://localhost:5173](http://localhost:5173) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `pnpm test`
+### `pnpm test` | _Not working at the moment - please check back later_
 
 Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `pnpm run build`
 
