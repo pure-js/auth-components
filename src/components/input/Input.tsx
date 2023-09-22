@@ -1,13 +1,18 @@
 import classes from './input.module.scss';
 
 interface ButtonProps {
-  /**
-   * Is this the principal call to action on the page?
-   */
   type?: string;
   minLength?: number;
+  id?: string;
+  autoFocus?: boolean;
 }
 
-export const Input = ({ type, minLength }: ButtonProps) => (
-  <input minLength={minLength} className={classes.input} type={type} />
+export const Input = ({ type, minLength, id, autoFocus }: ButtonProps) => (
+  <input
+    id={id}
+    autoFocus={autoFocus}
+    minLength={minLength}
+    className={classes.input}
+    type={type}
+  />
 );
