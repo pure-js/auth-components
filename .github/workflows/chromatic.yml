@@ -1,9 +1,12 @@
-name: pnpm Example Workflow
+name: Chromatic
 
 on:
   push:
     branches:
       - main
+
+env:
+  CHROMATIC_PROJECT_TOKEN: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
 
 jobs:
   build:
