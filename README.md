@@ -12,6 +12,12 @@
 
 - Vite
 
+## Links
+
+[Storybook published to Chromatic](https://main--650d730a03965a33ff21d7d8.chromatic.com/?path=/story/form-button--primary) with UI components
+
+App Deployed as [Static SPA](pure-js.github.io/auth-components/)
+
 ## Available Scripts
 
 In the project directory, you can run:
