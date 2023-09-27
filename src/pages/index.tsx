@@ -2,10 +2,15 @@ import { FileRoute, redirect } from '@tanstack/react-router';
 
 import { SortableTable } from '@/components/sortable-table';
 import { useDataFetch } from '@/services/hooks/useDataFetch';
-import { Auth } from '@/services/Auth';
+// import { Auth } from '@/services/Auth';
 import { Loading } from '@/components/loading';
 
 import { router } from './../providers';
+
+function Auth() {
+  const isAuthenticated = true;
+  return { isAuthenticated };
+}
 
 export const HomePage = () => {
   const { data, isLoading, error } = useDataFetch('/');

@@ -19,6 +19,7 @@
     "wretch": "^2.7.0"
   },
   "devDependencies": {
+    "@axe-core/react": "4.7.3",
     "@storybook/addon-essentials": "^7.4.3",
     "@storybook/addon-interactions": "^7.4.3",
     "@storybook/addon-links": "^7.4.3",
