@@ -28,3 +28,7 @@ dist-ssr
 # Storybook build
 storybook-static
 
+# Playwright
+/test-results/
+/playwright-report/
+/playwright/.cache/

@@ -10,6 +10,7 @@
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
+    "test-storybook": "test-storybook",
     "chromatic": "chromatic --exit-zero-on-changes"
   },
   "dependencies": {
@@ -19,6 +20,8 @@
     "wretch": "^2.7.0"
   },
   "devDependencies": {
+    "@playwright/test": "^1.38.1",
+    "@storybook/addon-a11y": "^7.4.6",
     "@storybook/addon-essentials": "^7.4.3",
     "@storybook/addon-interactions": "^7.4.3",
     "@storybook/addon-links": "^7.4.3",
@@ -26,7 +29,9 @@
     "@storybook/blocks": "^7.4.3",
     "@storybook/react": "^7.4.3",
     "@storybook/react-vite": "^7.4.3",
+    "@storybook/test-runner": "^0.13.0",
     "@storybook/testing-library": "^0.2.1",
+    "@types/node": "^20.8.4",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
