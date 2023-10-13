@@ -26,12 +26,16 @@ export const Primary: Story = {
   args: {
     primary: true,
     label: 'Button',
+    placeholder: 'placeholder',
+    id: 'button-label',
   },
 };
 
 export const Secondary: Story = {
   args: {
     label: 'Button',
+    placeholder: 'placeholder',
+    id: 'button-label',
   },
 };
 
@@ -39,6 +43,8 @@ export const Large: Story = {
   args: {
     size: 'large',
     label: 'Button',
+    placeholder: 'placeholder',
+    id: 'button-label',
   },
 };
 
@@ -46,6 +52,8 @@ export const Small: Story = {
   args: {
     size: 'small',
     label: 'Button',
+    placeholder: 'placeholder',
+    id: 'button-label',
   },
 };
 
@@ -53,6 +61,8 @@ export const Warning: Story = {
   args: {
     primary: true,
     label: 'Delete now',
+    id: 'button-label',
+    placeholder: 'placeholder',
     backgroundColor: 'red',
   },
 };
