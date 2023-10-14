@@ -22,7 +22,7 @@ export const Input = ({
   size = 'medium',
 }: InputProps) => (
   <>
-    <label htmlFor={id} className={(classes.label, classes[size])}>
+    <label htmlFor={id} className={`${classes.label} ${classes[size]}`}>
       {label}
     </label>
     <input
@@ -30,7 +30,7 @@ export const Input = ({
       autoFocus={autoFocus}
       minLength={minLength}
       placeholder={placeholder}
-      className={(classes.input, classes[size])}
+      className={`${classes.input} ${classes[size]}`}
       type={type}
     />
   </>

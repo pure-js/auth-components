@@ -46,19 +46,20 @@ export const Large: Story = {
   },
 };
 
+export const Medium: Story = {
+  args: {
+    size: 'medium',
+    label: 'Delete now',
+    id: 'button-label',
+    placeholder: 'placeholder',
+  },
+};
+
 export const Small: Story = {
   args: {
     size: 'small',
     label: 'Button',
     placeholder: 'placeholder',
     id: 'button-label',
-  },
-};
-
-export const Warning: Story = {
-  args: {
-    label: 'Delete now',
-    id: 'button-label',
-    placeholder: 'placeholder',
   },
 };

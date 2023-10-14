@@ -1,12 +1,13 @@
-import { useState, useEffect, useReducer, useCallback } from 'react';
-import wretch from 'wretch';
+import { useState } from 'react';
+// import { useState, useEffect, useReducer, useCallback } from 'react';
+// import wretch from 'wretch';
 
-const baseUrl = 'https://www.fruityvice.com';
-const endPoint = 'api/fruit/all';
+// const baseUrl = 'https://www.fruityvice.com';
+// const endPoint = 'api/fruit/all';
 // const apiKey = `api_key=${import.meta.env.VITE_NASDAQ_API_KEY}`;
 // const finalurl = `${baseUrl}${endPoint}.json?${apiKey}`;
 // Instantiate and configure wretch
-const api = wretch(baseUrl, { mode: 'no-cors' });
+// const api = wretch(baseUrl, { mode: 'no-cors' });
 // .errorType('json')
 // .resolve((r) => r.json());
 
@@ -37,42 +38,50 @@ const api = wretch(baseUrl, { mode: 'no-cors' });
 //   console.error(`${error.status}: ${message}`);
 // }
 
-export const useDataFetch = (url: string) => {
-  const [data, setData] = useState(null);
-  const [isLoading, setIsLoading] = useState(false);
-  const [error, setError] = useState(null);
+// export const useDataFetch = (url: string) => {
+//   const [data, setData] = useState(null);
+//   const [isLoading, setIsLoading] = useState(false);
+//   const [error, setError] = useState(null);
 
-  useEffect(() => {
-    setIsLoading(true);
-    setData(null);
-    setError(null);
+//   useEffect(() => {
+//     setIsLoading(true);
+//     setData(null);
+//     setError(null);
 
-    async function logMovies() {
-      const response = await fetch(`${baseUrl}/${endPoint}`, {
-        method: 'GET',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        // mode: 'no-cors',
-      });
-      const fruits = await response.data;
-      console.log('fru ', fruits);
-      setData(fruits);
-    }
-    logMovies();
-    async function getData() {
-      try {
-        const fruits = await api.get(endPoint).json();
-        console.log('f', fruits);
-        setData(fruits);
-        setIsLoading(false);
-      } catch (err) {
-        console.error(err);
-        setError(err);
-      }
-    }
-    // getData();
-  }, []);
+//     async function logMovies() {
+//       const response = await fetch(`${baseUrl}/${endPoint}`, {
+//         method: 'GET',
+//         headers: {
+//           'Content-Type': 'application/json',
+//         },
+//         // mode: 'no-cors',
+//       });
+//       const fruits = await response.data;
+//       console.log('fru ', fruits);
+//       setData(fruits);
+//     }
+//     logMovies();
+//     async function getData() {
+//       try {
+//         const fruits = await api.get(endPoint).json();
+//         console.log('f', fruits);
+//         setData(fruits);
+//         setIsLoading(false);
+//       } catch (err) {
+//         console.error(err);
+//         setError(err);
+//       }
+//     }
+//     // getData();
+//   }, []);
+
+//   return { data, isLoading, error };
+// };
+
+export const useDataFetch = () => {
+  const [data] = useState(null);
+  const [isLoading] = useState(false);
+  const [error] = useState(null);
 
   return { data, isLoading, error };
 };

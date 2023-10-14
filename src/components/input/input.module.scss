@@ -10,6 +10,16 @@
     border: 1px solid rgb(155, 161, 165);
     outline: none;
   }
+
+  &.small {
+    padding: 12px 18px;
+  }
+  &.medium {
+    padding: 17px 24px;
+  }
+  &.large {
+    padding: 23px 32px;
+  }
 }
 
 .label {
@@ -21,4 +31,17 @@
   bottom: -0.4rem;
   padding: 0 10px 0 (24+1px);
   background: #fff;
+
+  &.small {
+    bottom: -0.4rem;
+    padding: 0 10px 0 (18+1px);
+  }
+  &.medium {
+    bottom: -0.4rem;
+    padding: 0 10px 0 (24+1px);
+  }
+  &.large {
+    bottom: -0.4rem;
+    padding: 0 10px 0 (32+1px);
+  }
 }
