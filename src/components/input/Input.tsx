@@ -8,6 +8,8 @@ interface InputProps {
   id?: string;
   autoFocus?: boolean;
   placeholder?: string;
+  className?: string;
+  size?: 'small' | 'medium' | 'large';
 }
 
 export const Input = ({
@@ -17,9 +19,10 @@ export const Input = ({
   label,
   autoFocus,
   placeholder,
+  size = 'medium',
 }: InputProps) => (
   <>
-    <label htmlFor={id} className={classes.label}>
+    <label htmlFor={id} className={`${classes.label} ${classes[size]}`}>
       {label}
     </label>
     <input
@@ -27,7 +30,7 @@ export const Input = ({
       autoFocus={autoFocus}
       minLength={minLength}
       placeholder={placeholder}
-      className={classes.input}
+      className={`${classes.input} ${classes[size]}`}
       type={type}
     />
   </>

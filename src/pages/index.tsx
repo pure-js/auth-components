@@ -13,7 +13,7 @@ function Auth() {
 }
 
 export const HomePage = () => {
-  const { data, isLoading, error } = useDataFetch('/');
+  const { data, isLoading, error } = useDataFetch();
   console.log('data ', data);
 
   return (
@@ -31,7 +31,7 @@ export const HomePage = () => {
 };
 
 export const HomeRoute = new FileRoute('/').createRoute({
-  id: 'authenticated',
+  // id: 'authenticated',
   beforeLoad: async () => {
     const { isAuthenticated } = Auth();
     if (!isAuthenticated) {
