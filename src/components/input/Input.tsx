@@ -24,14 +24,14 @@ export const Input = ({
   <>
     <label htmlFor={id} className={`${classes.label} ${classes[size]}`}>
       {label}
+      <input
+        id={id}
+        autoFocus={autoFocus}
+        minLength={minLength}
+        placeholder={placeholder}
+        className={`${classes.input} ${classes[size]}`}
+        type={type}
+      />
     </label>
-    <input
-      id={id}
-      autoFocus={autoFocus}
-      minLength={minLength}
-      placeholder={placeholder}
-      className={`${classes.input} ${classes[size]}`}
-      type={type}
-    />
   </>
 );

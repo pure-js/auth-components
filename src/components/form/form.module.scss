@@ -1,9 +1,9 @@
 .form {
   display: flex;
   flex-direction: column;
+  align-self: center;
   gap: 1rem;
   margin: 0 auto;
-  align-self: center;
   width: 100%;
   max-width: 20rem;
 }
