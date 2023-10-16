@@ -1,14 +1,15 @@
 .input {
-  width: 100%;
+  transition: border 0.3s;
   box-sizing: border-box;
-  padding: 17px 24px;
-  border-radius: 30px;
   border: 1px solid rgb(225, 231, 234);
+  border-radius: 30px;
+  padding: 17px 24px;
+  width: 100%;
   font-size: 1rem;
 
   &:focus {
-    border: 1px solid rgb(155, 161, 165);
     outline: none;
+    border: 1px solid rgb(155, 161, 165);
   }
 
   &.small {
@@ -23,14 +24,19 @@
 }
 
 .label {
-  width: 100%;
-  box-sizing: border-box;
-  color: rgb(178, 176, 183);
-  font-size: 0.9rem;
   position: relative;
   bottom: -0.4rem;
-  padding: 0 10px 0 (24+1px);
+  transition: color 0.3s;
+  box-sizing: border-box;
   background: #fff;
+  padding: 0 10px 0 (24+1px);
+  width: 100%;
+  color: rgba(178, 176, 183, 0.8);
+  font-size: 0.9rem;
+
+  &:focus-within {
+    color: rgb(155, 161, 165);
+  }
 
   &.small {
     bottom: -0.4rem;
