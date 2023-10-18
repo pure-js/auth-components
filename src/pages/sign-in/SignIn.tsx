@@ -1,8 +1,8 @@
 import { Route } from '@tanstack/react-router';
 
-import { Form } from '@/components/form';
-import { Input } from '@/components/input';
-import { Button } from '@/components/button';
+import Form from '@/components/form';
+import Input from '@/components/input';
+import Button from '@/components/button';
 import { rootRoute } from '@/pages/__root';
 
 export const SignInPage = () => {
