@@ -1,4 +1,5 @@
 .btn {
+  transition: opacity 0.3s;
   cursor: pointer;
   box-sizing: border-box;
   border: 0;
@@ -6,6 +7,10 @@
   width: 100%;
   font-weight: 700;
   font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+  &:hover {
+    opacity: 0.8;
+  }
 
   &:disabled {
     filter: invert(75%);

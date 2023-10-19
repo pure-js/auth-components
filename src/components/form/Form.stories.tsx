@@ -2,9 +2,10 @@ import type { Meta, StoryObj } from '@storybook/react';
 
 import { Form } from './Form';
 import Input from '@/components/input';
+import Button from '@/components/button';
 
 import { Primary, Medium } from '@/components/input/Input.stories';
-// import * as ButtonStories from '@/components/button/Button.stories';
+import * as Btn from '@/components/button/Button.stories';
 
 const meta = {
   title: 'Form',
@@ -26,12 +27,13 @@ const FormTemplate: Story = {
       <Form {...args}>
         <Input {...Primary.args} />
         <Input {...Medium.args} />
+        <Button {...Btn.Primary.args} />
       </Form>
     );
   },
 };
 
-export const Login: Story = {
+export const LoginForm: Story = {
   ...FormTemplate,
   args: {},
 };
