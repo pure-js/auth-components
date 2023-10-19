@@ -22,14 +22,17 @@ export const Primary: Story = {
   args: {
     primary: true,
     label: 'Button',
+    size: 'large',
   },
 };
 
-export const Secondary: Story = {
+export const Hover: Story = {
   args: {
     label: 'Button',
   },
 };
+
+Hover.parameters = { pseudo: { hover: true } };
 
 export const Large: Story = {
   args: {

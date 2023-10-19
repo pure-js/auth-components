@@ -46,6 +46,7 @@
     "prettier-plugin-css-order": "2.0.1",
     "sass": "1.67.0",
     "storybook": "^7.5.1",
+    "storybook-addon-pseudo-states": "2.1.2",
     "typescript": "^5.0.2",
     "vite": "^4.4.5"
   },
