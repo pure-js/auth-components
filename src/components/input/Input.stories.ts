@@ -40,7 +40,7 @@ export const Secondary: Story = {
 export const Large: Story = {
   args: {
     size: 'large',
-    label: 'Button',
+    label: 'Large input label',
     placeholder: 'placeholder',
     id: 'button-label',
   },
@@ -49,7 +49,7 @@ export const Large: Story = {
 export const Medium: Story = {
   args: {
     size: 'medium',
-    label: 'Delete now',
+    label: 'Medium input label',
     id: 'button-label',
     placeholder: 'placeholder',
   },

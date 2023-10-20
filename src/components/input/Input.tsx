@@ -4,7 +4,7 @@ import classes from './input.module.scss';
 interface InputProps {
   type?: HTMLInputTypeAttribute;
   minLength?: number;
-  label?: string;
+  label: string;
   id?: string;
   autoFocus?: boolean;
   placeholder?: string;
@@ -23,7 +23,7 @@ export const Input = ({
 }: InputProps) => (
   <>
     <label htmlFor={id} className={`${classes.label} ${classes[size]}`}>
-      {label}
+      <span className={`${classes.labelText} ${classes[size]}`}>{label}</span>
       <input
         id={id}
         autoFocus={autoFocus}
