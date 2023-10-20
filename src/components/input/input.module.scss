@@ -24,30 +24,33 @@
 }
 
 .label {
-  position: relative;
-  bottom: -0.4rem;
   transition: color 0.3s;
   box-sizing: border-box;
-  background: #fff;
-  padding: 0 10px 0 (24+1px);
   width: 100%;
   color: rgba(178, 176, 183, 0.8);
-  font-size: 0.9rem;
 
   &:focus-within {
     color: rgb(155, 161, 165);
   }
 
-  &.small {
+  &Text {
+    position: relative;
     bottom: -0.4rem;
-    padding: 0 10px 0 (18+1px);
-  }
-  &.medium {
-    bottom: -0.4rem;
+    background: #fff;
     padding: 0 10px 0 (24+1px);
-  }
-  &.large {
-    bottom: -0.4rem;
-    padding: 0 10px 0 (32+1px);
+    font-size: 0.9rem;
+
+    &.small {
+      bottom: -0.4rem;
+      padding: 0 10px 0 (18+1px);
+    }
+    &.medium {
+      bottom: -0.4rem;
+      padding: 0 10px 0 (24+1px);
+    }
+    &.large {
+      bottom: -0.4rem;
+      padding: 0 10px 0 (32+1px);
+    }
   }
 }
