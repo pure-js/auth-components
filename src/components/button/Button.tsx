@@ -32,13 +32,11 @@ export const Button = ({
   className,
   ...props
 }: ButtonProps) => {
-  const mode = primary ? classes['btn--primary'] : classes['btn--secondary'];
+  const mode = primary ? classes.primary : '';
   return (
     <button
       type="button"
-      className={[className, classes.btn, classes[`btn--${size}`], mode].join(
-        ' ',
-      )}
+      className={[className, classes.btn, classes[size], mode].join(' ')}
       disabled={isDisabled}
       {...props}
     >

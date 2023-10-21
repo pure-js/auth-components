@@ -2,9 +2,12 @@
   transition: opacity 0.3s;
   cursor: pointer;
   box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
   border: 0;
-  border-radius: 3em;
+  border-radius: 2em;
+  background-color: transparent; // secondary
   width: 100%;
+  color: #333; // secondary
   font-weight: 700;
   font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
@@ -15,27 +18,26 @@
   &:disabled {
     filter: invert(75%);
     cursor: not-allowed;
+
+    &:hover {
+      opacity: inherit;
+    }
   }
 
-  &--primary {
+  &.primary {
     background-color: #1ea7fd;
     color: white;
   }
-  &--secondary {
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
-    background-color: transparent;
-    color: #333;
-  }
 
-  &--small {
+  &.small {
     padding: 10px 16px;
     font-size: 12px;
   }
-  &--medium {
+  &.medium {
     padding: 11px 20px;
     font-size: 14px;
   }
-  &--large {
+  &.large {
     padding: 12px 24px;
     font-size: 16px;
   }

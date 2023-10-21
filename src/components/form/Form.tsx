@@ -7,7 +7,10 @@ interface FormProps {
 }
 
 export const Form = ({ onSubmit, children }: PropsWithChildren<FormProps>) => (
-  <form onSubmit={onSubmit} className={classes.form}>
+  <form
+    onSubmit={onSubmit}
+    className={[classes.form, classes.container].join(' ')}
+  >
     {children}
   </form>
 );
