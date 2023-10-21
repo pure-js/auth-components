@@ -22,14 +22,16 @@ export const Input = ({
   size = 'medium',
 }: InputProps) => (
   <>
-    <label htmlFor={id} className={`${classes.label} ${classes[size]}`}>
-      <span className={`${classes.labelText} ${classes[size]}`}>{label}</span>
+    <label htmlFor={id} className={[classes.label, classes[size]].join(' ')}>
+      <span className={[classes.labelText, classes[size]].join(' ')}>
+        {label}
+      </span>
       <input
         id={id}
         autoFocus={autoFocus}
         minLength={minLength}
         placeholder={placeholder}
-        className={`${classes.input} ${classes[size]}`}
+        className={[classes.input, classes[size]].join(' ')}
         type={type}
       />
     </label>
