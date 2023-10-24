@@ -16,13 +16,17 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof SortableTable>;
 
-const SortableTableTemplate: Story = {
-  render: ({ ...args }) => {
-    return <SortableTable {...args} />;
-  },
-};
+// const SortableTableTemplate: Story = {
+//   render: ({ ...args }) => {
+//     return <SortableTable {...args} />;
+//   },
+// };
+
+// export const SortableTableBasic: Story = {
+//   ...SortableTableTemplate,
+//   args: {},
+// };
 
 export const SortableTableBasic: Story = {
-  ...SortableTableTemplate,
   args: {},
 };
