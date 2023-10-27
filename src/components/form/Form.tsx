@@ -1,16 +1,14 @@
 import { PropsWithChildren } from 'react';
 
-import classes from './form.module.scss';
+import layout from '@/components/layout/index.module.scss';
+import form from './form.module.scss';
 
 interface FormProps {
   onSubmit: () => void;
 }
 
 export const Form = ({ onSubmit, children }: PropsWithChildren<FormProps>) => (
-  <form
-    onSubmit={onSubmit}
-    className={[classes.form, classes.container].join(' ')}
-  >
+  <form onSubmit={onSubmit} className={[form.base, layout.container].join(' ')}>
     {children}
   </form>
 );

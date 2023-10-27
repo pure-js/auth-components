@@ -1,4 +1,4 @@
-import classes from './button.module.scss';
+import button from './button.module.scss';
 
 interface ButtonProps {
   /**
@@ -32,11 +32,11 @@ export const Button = ({
   className,
   ...props
 }: ButtonProps) => {
-  const mode = primary ? classes.primary : '';
+  const mode = primary ? button.primary : '';
   return (
     <button
       type="button"
-      className={[className, classes.btn, classes[size], mode].join(' ')}
+      className={[className, button.base, button[size], mode].join(' ')}
       disabled={isDisabled}
       {...props}
     >

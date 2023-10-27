@@ -1,4 +1,4 @@
-.btn {
+.base {
   transition: opacity 0.3s;
   cursor: pointer;
   box-sizing: border-box;
@@ -23,22 +23,22 @@
       opacity: inherit;
     }
   }
+}
 
-  &.primary {
-    background-color: #1ea7fd;
-    color: white;
-  }
+.primary {
+  background-color: #1ea7fd;
+  color: white;
+}
 
-  &.small {
-    padding: 10px 16px;
-    font-size: 12px;
-  }
-  &.medium {
-    padding: 11px 20px;
-    font-size: 14px;
-  }
-  &.large {
-    padding: 12px 24px;
-    font-size: 16px;
-  }
+.small {
+  padding: 10px 16px;
+  font-size: 12px;
+}
+.medium {
+  padding: 11px 20px;
+  font-size: 14px;
+}
+.large {
+  padding: 12px 24px;
+  font-size: 16px;
 }
