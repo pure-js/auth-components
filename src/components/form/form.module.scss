@@ -1,4 +1,4 @@
-.form {
+.base {
   display: flex;
   flex-direction: column;
   align-self: center;
@@ -7,9 +7,4 @@
   margin: 0 auto;
   width: 100%;
   max-width: 20rem;
-}
-
-.container {
-  padding-right: max(env(safe-area-inset-right, 1rem), 1rem);
-  padding-left: max(env(safe-area-inset-left, 1rem), 1rem);
 }

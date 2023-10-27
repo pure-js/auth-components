@@ -1,4 +1,4 @@
-.input {
+.base {
   transition: border 0.3s;
   box-sizing: border-box;
   border: 1px solid rgb(225, 231, 234);
@@ -11,16 +11,16 @@
     outline: none;
     border: 1px solid rgb(155, 161, 165);
   }
+}
 
-  &.small {
-    padding: 12px 18px;
-  }
-  &.medium {
-    padding: 17px 24px;
-  }
-  &.large {
-    padding: 23px 32px;
-  }
+.small {
+  padding: 12px 18px;
+}
+.medium {
+  padding: 17px 24px;
+}
+.large {
+  padding: 23px 32px;
 }
 
 .label {

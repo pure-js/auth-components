@@ -1,0 +1,4 @@
+.container {
+  padding-right: max(env(safe-area-inset-right, 1rem), 1rem);
+  padding-left: max(env(safe-area-inset-left, 1rem), 1rem);
+}
