@@ -1,12 +1,15 @@
-export const SortableTable = () => {
+interface SortableTableProps {
+  headings: string[];
+}
+
+export const SortableTable = ({ headings }: SortableTableProps) => {
   return (
     <table>
       <thead>
         <tr>
-          <th>Date</th>
-          <th>Title</th>
-          <th>Amount</th>
-          <th>Distance</th>
+          {headings.map((heading) => (
+            <th>{heading}</th>
+          ))}
         </tr>
       </thead>
       <tbody>

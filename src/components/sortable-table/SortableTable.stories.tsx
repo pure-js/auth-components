@@ -28,5 +28,7 @@ type Story = StoryObj<typeof SortableTable>;
 // };
 
 export const SortableTableBasic: Story = {
-  args: {},
+  args: {
+    headings: ['Date', 'Title', 'Amount', 'Distance'],
+  },
 };

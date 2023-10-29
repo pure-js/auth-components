@@ -1,3 +1,4 @@
+import { getCssNameBySize } from '@/utils/index';
 import button from './button.module.scss';
 
 interface ButtonProps {
@@ -8,7 +9,7 @@ interface ButtonProps {
   /**
    * How large should the button be?
    */
-  size?: 'small' | 'medium' | 'large';
+  size?: 'sm' | 'md' | 'lg';
   /**
    * Button contents
    */
@@ -26,17 +27,18 @@ interface ButtonProps {
  */
 export const Button = ({
   primary = false,
-  size = 'medium',
+  size = 'md',
   label,
   isDisabled,
   className,
   ...props
 }: ButtonProps) => {
   const mode = primary ? button.primary : '';
+  const $size = getCssNameBySize(size);
   return (
     <button
       type="button"
-      className={[className, button.base, button[size], mode].join(' ')}
+      className={[className, button.default, button[$size], mode].join(' ')}
       disabled={isDisabled}
       {...props}
     >
