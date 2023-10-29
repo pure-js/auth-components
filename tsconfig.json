@@ -16,7 +16,8 @@
     "paths": {
       "@/components/*": ["./src/components/*"],
       "@/services/*": ["./src/services/*"],
-      "@/pages/*": ["./src/pages/*"]
+      "@/pages/*": ["./src/pages/*"],
+      "@/utils/*": ["./src/utils/*"]
     },
 
     /* Linting */
