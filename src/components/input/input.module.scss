@@ -1,6 +1,7 @@
-.base {
+.default {
   transition: border 0.3s;
   box-sizing: border-box;
+  outline: none;
   border: 1px solid rgb(225, 231, 234);
   border-radius: 30px;
   padding: 17px 24px;
@@ -8,18 +9,25 @@
   font-size: 1rem;
 
   &:focus {
-    outline: none;
     border: 1px solid rgb(155, 161, 165);
   }
 }
 
-.small {
+.m_invalid {
+  border: 1px solid rgb(255, 124, 124);
+
+  &:focus {
+    border: 1px solid rgb(255, 0, 0);
+  }
+}
+
+.--small {
   padding: 12px 18px;
 }
-.medium {
+.--medium {
   padding: 17px 24px;
 }
-.large {
+.--large {
   padding: 23px 32px;
 }
 
@@ -33,24 +41,29 @@
     color: rgb(155, 161, 165);
   }
 
-  &Text {
+  &_txt {
     position: relative;
     bottom: -0.4rem;
     background: #fff;
     padding: 0 10px 0 (24+1px);
     font-size: 0.9rem;
 
-    &.small {
+    & .--small {
       bottom: -0.4rem;
       padding: 0 10px 0 (18+1px);
     }
-    &.medium {
+    & .--medium {
       bottom: -0.4rem;
       padding: 0 10px 0 (24+1px);
     }
-    &.large {
+    & .--large {
       bottom: -0.4rem;
       padding: 0 10px 0 (32+1px);
     }
   }
+}
+
+.invalid_txt {
+  padding: 3px 10px 0 (24+1px);
+  color: red;
 }

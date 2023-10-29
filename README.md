@@ -44,6 +44,18 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
+## CSS naming convention
+
+<!-- prettier-ignore -->
+```css
+/*-- For CSS Modules --*/
+
+.beautiful_input {} /* Block */
+.beautiful_input.ivalid_txt {} /* Element */
+.beautiful_input.m_invalid {} /* Modificator */
+.beautiful_input.--large {} /* Size Modificator */
+```
+
 ## ESLint Notes
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
