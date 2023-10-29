@@ -1,5 +1,6 @@
 import type { HTMLInputTypeAttribute } from 'react';
 import input from './input.module.scss';
+import { getCssNameBySize } from '@/utils/index';
 
 interface InputProps {
   type?: HTMLInputTypeAttribute;
@@ -12,17 +13,6 @@ interface InputProps {
   size?: 'sm' | 'md' | 'lg';
   validationMessage?: string;
 }
-
-const getCssNameBySize = (size: 'sm' | 'md' | 'lg') => {
-  switch (size) {
-    case 'sm':
-      return '--small';
-    case 'md':
-      return '--medium';
-    case 'lg':
-      return '--large';
-  }
-};
 
 export const Input = ({
   type,

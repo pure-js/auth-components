@@ -18,6 +18,10 @@ export default defineConfig({
         find: '@/pages',
         replacement: '/src/pages',
       },
+      {
+        find: '@/utils',
+        replacement: '/src/utils',
+      },
     ],
   },
   optimizeDeps: {
