@@ -32,32 +32,41 @@ export const Primary: Story = {
 export const Secondary: Story = {
   args: {
     label: 'Secondary input label',
-    placeholder: 'placeholder',
+    placeholder: 'Placeholder',
     id: 'button-label',
   },
 };
 
 export const Large: Story = {
   args: {
-    size: 'large',
+    size: 'lg',
     label: 'Large input label',
-    placeholder: 'placeholder',
+    placeholder: 'Placeholder',
     id: 'button-label',
   },
 };
 
 export const Medium: Story = {
   args: {
-    size: 'medium',
+    size: 'md',
     label: 'Medium input label',
     id: 'button-label',
-    placeholder: 'placeholder',
+    placeholder: 'Placeholder',
+  },
+};
+
+export const Invalid: Story = {
+  args: {
+    label: 'Medium input label',
+    id: 'button-label',
+    placeholder: 'Placeholder',
+    validationMessage: 'Username is already taken',
   },
 };
 
 export const Small: Story = {
   args: {
-    size: 'small',
+    size: 'sm',
     label: 'Button',
     placeholder: 'placeholder',
     id: 'button-label',

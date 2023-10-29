@@ -9,8 +9,20 @@ interface InputProps {
   autoFocus?: boolean;
   placeholder?: string;
   className?: string;
-  size?: 'small' | 'medium' | 'large';
+  size?: 'sm' | 'md' | 'lg';
+  validationMessage?: string;
 }
+
+const getCssNameBySize = (size: 'sm' | 'md' | 'lg') => {
+  switch (size) {
+    case 'sm':
+      return '--small';
+    case 'md':
+      return '--medium';
+    case 'lg':
+      return '--large';
+  }
+};
 
 export const Input = ({
   type,
@@ -19,19 +31,36 @@ export const Input = ({
   label,
   autoFocus,
   placeholder,
-  size = 'medium',
-}: InputProps) => (
-  <>
-    <label htmlFor={id} className={[input.label, input[size]].join(' ')}>
-      <span className={[input.labelText, input[size]].join(' ')}>{label}</span>
-      <input
-        id={id}
-        autoFocus={autoFocus}
-        minLength={minLength}
-        placeholder={placeholder}
-        className={[input.base, input[size]].join(' ')}
-        type={type}
-      />
-    </label>
-  </>
-);
+  className,
+  size = 'md',
+  validationMessage,
+}: InputProps) => {
+  const $size = getCssNameBySize(size);
+  return (
+    <>
+      <label
+        htmlFor={id}
+        className={[input.label, input[$size], className].join(' ')}
+      >
+        <span className={[input.label_txt, input[$size]].join(' ')}>
+          {label}
+        </span>
+        <input
+          id={id}
+          autoFocus={autoFocus}
+          minLength={minLength}
+          placeholder={placeholder}
+          className={[
+            input.default,
+            validationMessage && input.m_invalid,
+            input[$size],
+          ].join(' ')}
+          type={type}
+        />
+        {validationMessage && (
+          <span className={input.invalid_txt}>{validationMessage}</span>
+        )}
+      </label>
+    </>
+  );
+};
