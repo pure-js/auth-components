@@ -14,7 +14,6 @@ function Auth() {
 
 export const HomePage = () => {
   const { data, isLoading, error } = useDataFetch();
-  console.log('data ', data);
 
   return (
     <>
@@ -23,7 +22,7 @@ export const HomePage = () => {
       {data && (
         <>
           <h1>Global Fundamentals Data</h1>
-          <SortableTable />
+          <SortableTable headings={['Date', 'Title', 'Amount', 'Distance']} />
         </>
       )}
     </>
