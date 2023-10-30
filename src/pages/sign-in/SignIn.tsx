@@ -10,7 +10,7 @@ export const SignInPage = () => {
     <Form onSubmit={() => {}}>
       <Input label="Username" type="text" id="username" autoFocus={true} />
       <Input label="Password" type="password" minLength={8} id="password" />
-      <Button primary size="large" onClick={() => {}} label="Log in" />
+      <Button primary size="lg" onClick={() => {}} label="Log in" />
     </Form>
   );
 };

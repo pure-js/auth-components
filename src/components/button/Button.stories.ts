@@ -22,7 +22,15 @@ export const Primary: Story = {
   args: {
     primary: true,
     label: 'Button',
-    size: 'large',
+    size: 'lg',
+  },
+};
+
+export const Secondary: Story = {
+  args: {
+    primary: false,
+    label: 'Button',
+    size: 'lg',
   },
 };
 
@@ -36,14 +44,14 @@ Hover.parameters = { pseudo: { hover: true } };
 
 export const Large: Story = {
   args: {
-    size: 'large',
+    size: 'lg',
     label: 'Button',
   },
 };
 
 export const Small: Story = {
   args: {
-    size: 'small',
+    size: 'sm',
     label: 'Button',
   },
 };
