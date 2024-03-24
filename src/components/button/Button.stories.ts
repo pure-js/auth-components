@@ -20,7 +20,7 @@ type Story = StoryObj<typeof meta>;
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
 export const Primary: Story = {
   args: {
-    primary: true,
+    isPrimary: true,
     label: 'Button',
     size: 'lg',
   },
@@ -28,7 +28,7 @@ export const Primary: Story = {
 
 export const Secondary: Story = {
   args: {
-    primary: false,
+    isPrimary: false,
     label: 'Button',
     size: 'lg',
   },
