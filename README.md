@@ -6,7 +6,7 @@
 
 - React
 - TypeScript
-- SCSS + CSS Modules
+- Vanilla Extract CSS (best of CSS-in-JS and css modules combined)
 
 ### Bundling
 

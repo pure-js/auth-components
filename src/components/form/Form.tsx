@@ -1,6 +1,6 @@
-import { PropsWithChildren } from 'react';
+import type { PropsWithChildren } from 'react';
 import { cn } from '@/utils/index.ts';
-import layout from '@/components/layout/index.module.scss';
+import { container } from '@/components/layout/index.css.ts';
 import { form } from './form.css.ts';
 
 interface FormProps {
@@ -8,7 +8,7 @@ interface FormProps {
 }
 
 export const Form = ({ onSubmit, children }: PropsWithChildren<FormProps>) => (
-  <form onSubmit={onSubmit} className={cn(form, layout.container)}>
+  <form onSubmit={onSubmit} className={cn(form, container)}>
     {children}
   </form>
 );

@@ -1,6 +1,6 @@
 import type { HTMLInputTypeAttribute } from 'react';
-import input from './input.module.scss';
-import { getCssNameBySize } from '@/utils/index';
+import * as s from './input.css.ts';
+import { cn } from '@/utils/index';
 
 interface InputProps {
   type?: HTMLInputTypeAttribute;
@@ -10,7 +10,7 @@ interface InputProps {
   autoFocus?: boolean;
   placeholder?: string;
   className?: string;
-  size?: 'sm' | 'md' | 'lg';
+  size?: keyof typeof s.inputSize;
   validationMessage?: string;
 }
 
@@ -25,30 +25,24 @@ export const Input = ({
   size = 'md',
   validationMessage,
 }: InputProps) => {
-  const $size = getCssNameBySize(size);
   return (
     <>
-      <label
-        htmlFor={id}
-        className={[input.label, input[$size], className].join(' ')}
-      >
-        <span className={[input.label_txt, input[$size]].join(' ')}>
-          {label}
-        </span>
+      <label htmlFor={id} className={cn(s.label, s.inputSize[size], className)}>
+        <span className={cn(s.labelTxt, s.inputSize[size])}>{label}</span>
         <input
           id={id}
           autoFocus={autoFocus}
           minLength={minLength}
           placeholder={placeholder}
-          className={[
-            input.default,
-            validationMessage && input.m_invalid,
-            input[$size],
-          ].join(' ')}
+          className={cn(
+            s.inputBase,
+            validationMessage && s.invalid,
+            s.inputSize[size],
+          )}
           type={type}
         />
         {validationMessage && (
-          <span className={input.invalid_txt}>{validationMessage}</span>
+          <span className={s.invalidTxt}>{validationMessage}</span>
         )}
       </label>
     </>
