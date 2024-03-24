@@ -1,11 +1,19 @@
-import { RouterProvider, Router } from '@tanstack/react-router';
+import { RouterProvider, createRouter } from '@tanstack/react-router';
 
 import { routeTree } from './routeTree';
 
-export const router = new Router({
+// eslint-disable-next-line react-refresh/only-export-components
+export const router = createRouter({
   routeTree,
   defaultPreload: 'intent',
 });
+
+// Register the router instance for type safety
+declare module '@tanstack/react-router' {
+  interface Register {
+    router: typeof router;
+  }
+}
 
 export const Providers = ({ children }: { children?: React.ReactNode }) => {
   return (

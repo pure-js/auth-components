@@ -1,6 +1,6 @@
-import { rootRoute } from '@/pages/__root';
-import { HomeRoute } from '@/pages/index';
-import { SignInRoute } from '@/pages/sign-in';
+import { rootRoute } from './routes/__root';
+import { HomeRoute } from './routes/index';
+import { SignInRoute } from './routes/sign-in';
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
