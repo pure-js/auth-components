@@ -6,3 +6,6 @@ dist
 
 # TypeScript Configuration
 # tsconfig.json
+
+# auto generated files
+src/routeTree.gen.ts
