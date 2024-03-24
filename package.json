@@ -48,7 +48,7 @@
     "storybook": "^7.5.1",
     "storybook-addon-pseudo-states": "2.1.2",
     "typescript": "^5.0.2",
-    "typescript-plugin-css-modules": "5.0.2",
+    "typescript-plugin-css-modules": "5.1.0",
     "vite": "^4.4.5"
   },
   "readme": "ERROR: No README data found!",
