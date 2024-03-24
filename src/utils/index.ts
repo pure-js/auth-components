@@ -8,3 +8,6 @@ export const getCssNameBySize = (size: 'sm' | 'md' | 'lg') => {
       return '--large';
   }
 };
+
+export const cn = (...classNames: (string | undefined)[]) =>
+  classNames.filter(Boolean).join(' ');

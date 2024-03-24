@@ -5,7 +5,7 @@ import { useDataFetch } from '@/services/hooks/useDataFetch';
 // import { Auth } from '@/services/Auth';
 import { Loading } from '@/components/loading';
 
-import { router } from './../providers';
+import { router } from '../providers';
 
 function Auth() {
   const isAuthenticated = true;

@@ -1,10 +1,12 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react-swc';
+import { vanillaExtractPlugin } from '@vanilla-extract/vite-plugin';
+import { TanStackRouterVite } from '@tanstack/router-vite-plugin';
 
 // https://vitejs.dev/config/
 export default defineConfig({
   base: process.env.NODE_ENV === 'production' ? '/auth-components/' : '/',
-  plugins: [react()],
+  plugins: [react(), vanillaExtractPlugin(), TanStackRouterVite()],
   resolve: {
     alias: [
       {
@@ -16,8 +18,8 @@ export default defineConfig({
         replacement: '/src/services',
       },
       {
-        find: '@/pages',
-        replacement: '/src/pages',
+        find: '@/routes',
+        replacement: '/src/routes',
       },
       {
         find: '@/utils',
