@@ -10,44 +10,44 @@
 
 // Import Routes
 
-import { Route as rootRoute } from './routes/__root';
-import { Route as IndexImport } from './routes/index';
-import { Route as SignInIndexImport } from './routes/sign-in/index';
-import { Route as SignInSignInImport } from './routes/sign-in/SignIn';
+import { Route as rootRoute } from './routes/__root'
+import { Route as IndexImport } from './routes/index'
+import { Route as SignInIndexImport } from './routes/sign-in/index'
+import { Route as SignInSignInImport } from './routes/sign-in/SignIn'
 
 // Create/Update Routes
 
 const IndexRoute = IndexImport.update({
   path: '/',
   getParentRoute: () => rootRoute,
-} as any);
+} as any)
 
 const SignInIndexRoute = SignInIndexImport.update({
   path: '/sign-in/',
   getParentRoute: () => rootRoute,
-} as any);
+} as any)
 
 const SignInSignInRoute = SignInSignInImport.update({
   path: '/sign-in/SignIn',
   getParentRoute: () => rootRoute,
-} as any);
+} as any)
 
 // Populate the FileRoutesByPath interface
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
     '/': {
-      preLoaderRoute: typeof IndexImport;
-      parentRoute: typeof rootRoute;
-    };
+      preLoaderRoute: typeof IndexImport
+      parentRoute: typeof rootRoute
+    }
     '/sign-in/SignIn': {
-      preLoaderRoute: typeof SignInSignInImport;
-      parentRoute: typeof rootRoute;
-    };
+      preLoaderRoute: typeof SignInSignInImport
+      parentRoute: typeof rootRoute
+    }
     '/sign-in/': {
-      preLoaderRoute: typeof SignInIndexImport;
-      parentRoute: typeof rootRoute;
-    };
+      preLoaderRoute: typeof SignInIndexImport
+      parentRoute: typeof rootRoute
+    }
   }
 }
 
@@ -57,6 +57,6 @@ export const routeTree = rootRoute.addChildren([
   IndexRoute,
   SignInSignInRoute,
   SignInIndexRoute,
-]);
+])
 
 /* prettier-ignore-end */

@@ -1,15 +1,15 @@
-import { getCssNameBySize } from '@/utils/index';
-import button from './button.module.scss';
+import { cn } from '@/utils/index';
+import { btn, btnBase, btnSize } from './button.css.ts';
 
 interface ButtonProps {
   /**
    * Is this the principal call to action on the page?
    */
-  primary?: boolean;
+  isPrimary?: boolean;
   /**
    * How large should the button be?
    */
-  size?: 'sm' | 'md' | 'lg';
+  size?: keyof typeof btnSize;
   /**
    * Button contents
    */
@@ -26,19 +26,18 @@ interface ButtonProps {
  * Primary UI component for user interaction
  */
 export const Button = ({
-  primary = false,
+  isPrimary = false,
   size = 'md',
   label,
   isDisabled,
   className,
   ...props
 }: ButtonProps) => {
-  const mode = primary ? button.primary : '';
-  const $size = getCssNameBySize(size);
+  const mode = isPrimary ? 'primary' : 'secondary';
   return (
     <button
       type="button"
-      className={[className, button.default, button[$size], mode].join(' ')}
+      className={cn(className, btnBase, btnSize[size], btn[mode])}
       disabled={isDisabled}
       {...props}
     >
