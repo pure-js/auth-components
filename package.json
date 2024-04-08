@@ -52,7 +52,7 @@
     "prettier-plugin-css-order": "2.0.1",
     "storybook": "^8.0.4",
     "typescript": "^5.0.2",
-    "vite": "^5.2.4"
+    "vite": "^5.2.8"
   },
   "readme": "ERROR: No README data found!",
   "_id": "auth-components@0.0.0"
