@@ -55,5 +55,6 @@
     "vite": "^5.2.11"
   },
   "readme": "ERROR: No README data found!",
-  "_id": "auth-components@0.0.0"
+  "_id": "auth-components@0.0.0",
+  "packageManager": "pnpm@9.6.0"
 }
