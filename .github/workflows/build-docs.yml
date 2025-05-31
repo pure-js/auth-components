@@ -1,4 +1,4 @@
-name: Build
+name: Build Storybook Documentation
 
 on:
   push:
@@ -22,5 +22,5 @@ jobs:
           cache: 'pnpm'
       - name: Install dependencies
         run: pnpm install
-      - name: Run build
-        run: pnpm build
+      - name: Build Storybook
+        run: pnpm run build-storybook
