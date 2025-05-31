@@ -10,23 +10,23 @@ importers:
     dependencies:
       '@tanstack/react-router':
         specifier: 1.22.3
-        version: 1.22.3(react-dom@18.2.0)(react@18.2.0)
+        version: 1.22.3(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@vanilla-extract/css':
         specifier: ~1.14.1
         version: 1.14.1
       react:
-        specifier: ^18.2.0
-        version: 18.2.0
+        specifier: ^19.1.0
+        version: 19.1.0
       react-dom:
-        specifier: ^18.2.0
-        version: 18.2.0(react@18.2.0)
+        specifier: ^19.1.0
+        version: 19.1.0(react@19.1.0)
       wretch:
         specifier: ^2.7.0
         version: 2.7.0
     devDependencies:
       '@chromatic-com/storybook':
         specifier: ^1.2.25
-        version: 1.2.25(react@18.2.0)
+        version: 1.2.25(react@19.1.0)
       '@playwright/test':
         specifier: ^1.38.1
         version: 1.38.1
@@ -35,28 +35,28 @@ importers:
         version: 8.0.4
       '@storybook/addon-essentials':
         specifier: ^8.0.4
-        version: 8.0.4(@types/react@18.2.22)(react-dom@18.2.0)(react@18.2.0)
+        version: 8.0.4(@types/react@19.1.6)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@storybook/addon-interactions':
         specifier: ^8.0.4
-        version: 8.0.4(jest@29.7.0)
+        version: 8.0.4(@jest/globals@29.7.0)(jest@29.7.0(@types/node@20.8.4))
       '@storybook/addon-links':
         specifier: ^8.0.4
-        version: 8.0.4(react@18.2.0)
+        version: 8.0.4(react@19.1.0)
       '@storybook/addon-onboarding':
         specifier: ~8.0.4
         version: 8.0.4
       '@storybook/blocks':
         specifier: ^8.0.4
-        version: 8.0.4(@types/react@18.2.22)(react-dom@18.2.0)(react@18.2.0)
+        version: 8.0.4(@types/react@19.1.6)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@storybook/react':
         specifier: ^8.0.4
-        version: 8.0.4(react-dom@18.2.0)(react@18.2.0)(typescript@5.2.2)
+        version: 8.0.4(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(typescript@5.2.2)
       '@storybook/react-vite':
         specifier: ^8.0.4
-        version: 8.0.4(react-dom@18.2.0)(react@18.2.0)(typescript@5.2.2)(vite@5.2.11)
+        version: 8.0.4(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(rollup@4.13.0)(typescript@5.2.2)(vite@5.2.11(@types/node@20.8.4))
       '@storybook/test':
         specifier: ~8.0.4
-        version: 8.0.4(jest@29.7.0)
+        version: 8.0.4(@jest/globals@29.7.0)(jest@29.7.0(@types/node@20.8.4))
       '@storybook/test-runner':
         specifier: ^0.17.0
         version: 0.17.0(@types/node@20.8.4)
@@ -67,23 +67,23 @@ importers:
         specifier: ^20.8.4
         version: 20.8.4
       '@types/react':
-        specifier: ^18.2.15
-        version: 18.2.22
+        specifier: ^19.1.6
+        version: 19.1.6
       '@types/react-dom':
-        specifier: ^18.2.7
-        version: 18.2.7
+        specifier: ^19.1.5
+        version: 19.1.5(@types/react@19.1.6)
       '@typescript-eslint/eslint-plugin':
         specifier: ^7.0.2
-        version: 7.3.1(@typescript-eslint/parser@7.3.1)(eslint@8.57.0)(typescript@5.2.2)
+        version: 7.3.1(@typescript-eslint/parser@7.3.1(eslint@8.57.0)(typescript@5.2.2))(eslint@8.57.0)(typescript@5.2.2)
       '@typescript-eslint/parser':
         specifier: ^7.0.2
         version: 7.3.1(eslint@8.57.0)(typescript@5.2.2)
       '@vanilla-extract/vite-plugin':
         specifier: ~4.0.6
-        version: 4.0.6(@types/node@20.8.4)(vite@5.2.11)
+        version: 4.0.6(@types/node@20.8.4)(vite@5.2.11(@types/node@20.8.4))
       '@vitejs/plugin-react-swc':
         specifier: ^3.6.0
-        version: 3.6.0(vite@5.2.11)
+        version: 3.6.0(vite@5.2.11(@types/node@20.8.4))
       chromatic:
         specifier: 7.2.0
         version: 7.2.0
@@ -110,7 +110,7 @@ importers:
         version: 2.0.1(postcss@8.4.38)(prettier@3.2.5)
       storybook:
         specifier: ^8.0.4
-        version: 8.0.4(react-dom@18.2.0)(react@18.2.0)
+        version: 8.0.4(@babel/preset-env@7.24.3(@babel/core@7.24.3))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       typescript:
         specifier: ^5.0.2
         version: 5.2.2
@@ -1112,6 +1112,7 @@ packages:
   '@humanwhocodes/config-array@0.11.14':
     resolution: {integrity: sha512-3T8LkOmg45BV5FICb15QQMsyUSWrQ8AygVfC7ZG32zOalnqrilm018ZVCw0eapXux8FtA33q8PSRSstjee3jSg==}
     engines: {node: '>=10.10.0'}
+    deprecated: Use @eslint/config-array instead
 
   '@humanwhocodes/module-importer@1.0.1':
     resolution: {integrity: sha512-bxveV4V8v5Yb4ncFTT3rPSgZBOpCkjfK0y4oVVVJwIuDVBRMDXrPyXRL988i5ap9m9bnyEEjWfm5WkBmtffLfA==}
@@ -1119,6 +1120,7 @@ packages:
 
   '@humanwhocodes/object-schema@2.0.2':
     resolution: {integrity: sha512-6EwiSjwWYP7pTckG6I5eyFANjPhmPjUX9JRLUSfNPC7FX7zK9gyZAfUEaECL6ALTpGX5AjnBq3C9XmVWPitNpw==}
+    deprecated: Use @eslint/object-schema instead
 
   '@isaacs/cliui@8.0.2':
     resolution: {integrity: sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==}
@@ -1268,6 +1270,7 @@ packages:
   '@playwright/test@1.38.1':
     resolution: {integrity: sha512-NqRp8XMwj3AK+zKLbZShl0r/9wKgzqI/527bkptKXomtuo+dOjU9NdMASQ8DNC9z9zLOMbG53T4eihYr3XR+BQ==}
     engines: {node: '>=16'}
+    deprecated: Please update to the latest version of Playwright to test up-to-date browsers.
     hasBin: true
 
   '@radix-ui/react-compose-refs@1.0.1':
@@ -1843,17 +1846,19 @@ packages:
   '@types/range-parser@1.2.7':
     resolution: {integrity: sha512-hKormJbkJqzQGhziax5PItDUTMAM9uE2XXQmM37dyd4hVM+5aVl7oVxMVUiVQn2oCQFN/LKCZdvSM0pFRqbSmQ==}
 
-  '@types/react-dom@18.2.7':
-    resolution: {integrity: sha512-GRaAEriuT4zp9N4p1i8BDBYmEyfo+xQ3yHjJU4eiK5NDa1RmUZG+unZABUTK4/Ox/M+GaHwb6Ow8rUITrtjszA==}
+  '@types/react-dom@19.1.5':
+    resolution: {integrity: sha512-CMCjrWucUBZvohgZxkjd6S9h0nZxXjzus6yDfUb+xLxYM7VvjKNH1tQrE9GWLql1XoOP4/Ds3bwFqShHUYraGg==}
+    peerDependencies:
+      '@types/react': ^19.0.0
 
-  '@types/react@18.2.22':
-    resolution: {integrity: sha512-60fLTOLqzarLED2O3UQImc/lsNRgG0jE/a1mPW9KjMemY0LMITWEsbS4VvZ4p6rorEHd5YKxxmMKSDK505GHpA==}
+  '@types/react@18.3.23':
+    resolution: {integrity: sha512-/LDXMQh55EzZQ0uVAZmKKhfENivEvWz6E+EYzh+/MCjMhNsotd+ZHhBGIjFDTi6+fz0OhQQQLbTgdQIxxCsC0w==}
+
+  '@types/react@19.1.6':
+    resolution: {integrity: sha512-JeG0rEWak0N6Itr6QUx+X60uQmN+5t3j9r/OVDtWzFXKaj6kD1BwJzOksD0FF6iWxZlbE1kB0q9vtnU2ekqa1Q==}
 
   '@types/resolve@1.20.6':
     resolution: {integrity: sha512-A4STmOXPhMUtHH+S6ymgE2GiBSMqf4oTvcQZMcHzokuTLVYzXTB8ttjcgxOVaAp2lGwEdzZ0J+cRbbeevQj1UQ==}
-
-  '@types/scheduler@0.16.3':
-    resolution: {integrity: sha512-5cJ8CB4yAx7BH1oMvdU0Jh9lrEXyPkar6F9G/ERswkCuvP4KQZfZkSjcMbAICCpQTN4OuZn8tz0HiKv9TGZgrQ==}
 
   '@types/semver@7.5.2':
     resolution: {integrity: sha512-7aqorHYgdNO4DM36stTiGO3DvKoex9TQRwsJU6vMaFGyqpBA1MNZkz+PG3gaNUPpTAOYhT1WR7M1JyA3fbS9Cw==}
@@ -2510,6 +2515,9 @@ packages:
   csstype@3.1.2:
     resolution: {integrity: sha512-I7K1Uu0MBPzaFKg4nI5Q7Vs2t+3gWWW648spaF+Rg7pI9ds18Ugn+lvg4SHczUdKlHI5LWBXyqfS8+DufyBsgQ==}
 
+  csstype@3.1.3:
+    resolution: {integrity: sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw==}
+
   cwd@0.10.0:
     resolution: {integrity: sha512-YGZxdTTL9lmLkCUTpg4j0zQ7IhRB5ZmqNBbGCl3Tg6MP/d5/6sY7L5mmTjzbc6JKgVZYiqTQTNhPFsbXNGlRaA==}
     engines: {node: '>=0.8'}
@@ -2819,6 +2827,7 @@ packages:
   eslint@8.57.0:
     resolution: {integrity: sha512-dZ6+mexnaTIbSBZWgou51U6OmzIhYM2VcNdtiTtI7qPNZm35Akpr0f6vtw3w1Kmn5PYo+tZVfh13WrhpS6oLqQ==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
     hasBin: true
 
   espree@9.6.1:
@@ -3119,6 +3128,7 @@ packages:
 
   glob@7.2.3:
     resolution: {integrity: sha512-nFR0zLpU2YCaRxwoCJvL6UvCH2JFyFVIvwTLsIf21AuHlMskA1hhTdk+LlYJtOlYt9v6dvszD2BGRqBL+iQK9Q==}
+    deprecated: Glob versions prior to v9 are no longer supported
 
   global-modules@0.2.3:
     resolution: {integrity: sha512-JeXuCbvYzYXcwE6acL9V2bAOeSIGl4dD+iwLY9iUx2VBJJ80R18HCn+JCwHM9Oegdfya3lEkGCdaRkSyc10hDA==}
@@ -3271,6 +3281,7 @@ packages:
 
   inflight@1.0.6:
     resolution: {integrity: sha512-k92I/b08q4wvFscXCLvqfsHCrjrF7yiXsQuIVvVE7N82W3+aqpzuUdBbfhWcy/FZR3/4IgflMgKLOsvPDrGCJA==}
+    deprecated: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
 
   inherits@2.0.4:
     resolution: {integrity: sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==}
@@ -4348,10 +4359,15 @@ packages:
     resolution: {integrity: sha512-i8aF1nyKInZnANZ4uZrH49qn1paRgBZ7wZiCNBMnenlPzEv0mRl+ShpTVEI6wZNl8sSc79xZkivtgLKQArcanQ==}
     engines: {node: '>=16.14.0'}
 
-  react-dom@18.2.0:
-    resolution: {integrity: sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==}
+  react-dom@18.3.1:
+    resolution: {integrity: sha512-5m4nQKp+rZRb09LNH59GM4BxTh9251/ylbKIbpe7TpGxfJ+9kv6BLkLBXIjjspbgbnIBNqlI23tRnTWT0snUIw==}
     peerDependencies:
-      react: ^18.2.0
+      react: ^18.3.1
+
+  react-dom@19.1.0:
+    resolution: {integrity: sha512-Xs1hdnE+DyKgeHJeJznQmYMIBG3TKIHJJT95Q58nHLSrElKlGQqDTR2HQ9fx5CN/Gk6Vh/kupBTDLU11/nDk/g==}
+    peerDependencies:
+      react: ^19.1.0
 
   react-element-to-jsx-string@15.0.0:
     resolution: {integrity: sha512-UDg4lXB6BzlobN60P8fHWVPX3Kyw8ORrTeBtClmIlGdkOOE+GYQSFvmEU5iLLpwp/6v42DINwNcwOhOLfQ//FQ==}
@@ -4368,8 +4384,12 @@ packages:
   react-is@18.1.0:
     resolution: {integrity: sha512-Fl7FuabXsJnV5Q1qIOQwx/sagGF18kogb4gpfcG4gjLBWO0WDiiz1ko/ExayuxE7InyQkBLkxRFG5oxY6Uu3Kg==}
 
-  react@18.2.0:
-    resolution: {integrity: sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==}
+  react@18.3.1:
+    resolution: {integrity: sha512-wS+hAgJShR0KhEvPJArfuPVN1+Hz1t0Y6n5jLrGQbkb4urgPE/0Rve+1kMB1v/oWgHgm4WIcV+i7F2pTVj+2iQ==}
+    engines: {node: '>=0.10.0'}
+
+  react@19.1.0:
+    resolution: {integrity: sha512-FS+XFBNvn3GTAWq26joslQgWNoFu08F4kl0J4CgdNKADkdSGXQyTCnKteIAJy96Br6YbpEU1LSzV5dYtjMkMDg==}
     engines: {node: '>=0.10.0'}
 
   read-pkg-up@7.0.1:
@@ -4485,10 +4505,12 @@ packages:
 
   rimraf@2.6.3:
     resolution: {integrity: sha512-mwqeW5XsA2qAejG46gYdENaxXjx9onRNCfn7L0duuP4hCuTIi/QO7PDK07KJfp1d+izWPrzEJDcSqBa0OZQriA==}
+    deprecated: Rimraf versions prior to v4 are no longer supported
     hasBin: true
 
   rimraf@3.0.2:
     resolution: {integrity: sha512-JZkJMZkAGFFPP2YqXZXPbMlMBgsxzE8ILs4lMIX/2o0L9UBw9O/Y3o6wFw/i9YLapcUJWwqbi3kdxIPdC62TIA==}
+    deprecated: Rimraf versions prior to v4 are no longer supported
     hasBin: true
 
   rollup@4.13.0:
@@ -4511,8 +4533,11 @@ packages:
   safer-buffer@2.1.2:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
 
-  scheduler@0.23.0:
-    resolution: {integrity: sha512-CtuThmgHNg7zIZWAXi3AsyIzA3n4xx7aNyjwC2VJldO2LMVDhFK+63xGqq6CsJH4rTAt6/M+N4GhZiDYPx9eUw==}
+  scheduler@0.23.2:
+    resolution: {integrity: sha512-UOShsPwz7NrMUqhR6t0hWjFduvOzbtv7toDH1/hIrfRNIDBnnBWd0CwJTGvTpngVlmwGCdP9/Zl/tVrDqcuYzQ==}
+
+  scheduler@0.26.0:
+    resolution: {integrity: sha512-NlHwttCI/l5gCPR3D1nNXtWABUmBwvZpEQiD4IXSbIDq8BzLIK/7Ir5gTFSGZDUu37K5cMNp0hFtzO38sC7gWA==}
 
   semver@5.7.2:
     resolution: {integrity: sha512-cBznnQ9KjJqU67B52RMC65CMarK2600WFnbkcaiwWq3xy/5haFJlshgnpjovMVJ+Hff49d8GEn0b87C5pDQ10g==}
@@ -5960,12 +5985,12 @@ snapshots:
 
   '@bcoe/v8-coverage@0.2.3': {}
 
-  '@chromatic-com/storybook@1.2.25(react@18.2.0)':
+  '@chromatic-com/storybook@1.2.25(react@19.1.0)':
     dependencies:
       chromatic: 11.2.0
       filesize: 10.1.1
       jsonfile: 6.1.0
-      react-confetti: 6.1.0(react@18.2.0)
+      react-confetti: 6.1.0(react@19.1.0)
       strip-ansi: 7.1.0
     transitivePeerDependencies:
       - '@chromatic-com/cypress'
@@ -5979,9 +6004,13 @@ snapshots:
 
   '@emotion/hash@0.9.1': {}
 
-  '@emotion/use-insertion-effect-with-fallbacks@1.0.1(react@18.2.0)':
+  '@emotion/use-insertion-effect-with-fallbacks@1.0.1(react@18.3.1)':
     dependencies:
-      react: 18.2.0
+      react: 18.3.1
+
+  '@emotion/use-insertion-effect-with-fallbacks@1.0.1(react@19.1.0)':
+    dependencies:
+      react: 19.1.0
 
   '@esbuild/aix-ppc64@0.20.2':
     optional: true
@@ -6346,14 +6375,15 @@ snapshots:
       '@types/yargs': 17.0.32
       chalk: 4.1.2
 
-  '@joshwooding/vite-plugin-react-docgen-typescript@0.3.0(typescript@5.2.2)(vite@5.2.11)':
+  '@joshwooding/vite-plugin-react-docgen-typescript@0.3.0(typescript@5.2.2)(vite@5.2.11(@types/node@20.8.4))':
     dependencies:
       glob: 7.2.3
       glob-promise: 4.2.2(glob@7.2.3)
       magic-string: 0.27.0
       react-docgen-typescript: 2.2.2(typescript@5.2.2)
-      typescript: 5.2.2
       vite: 5.2.11(@types/node@20.8.4)
+    optionalDependencies:
+      typescript: 5.2.2
 
   '@jridgewell/gen-mapping@0.3.3':
     dependencies:
@@ -6385,11 +6415,11 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.1
       '@jridgewell/sourcemap-codec': 1.4.15
 
-  '@mdx-js/react@3.0.1(@types/react@18.2.22)(react@18.2.0)':
+  '@mdx-js/react@3.0.1(@types/react@18.3.23)(react@18.3.1)':
     dependencies:
       '@types/mdx': 2.0.12
-      '@types/react': 18.2.22
-      react: 18.2.0
+      '@types/react': 18.3.23
+      react: 18.3.1
 
   '@ndelangen/get-tarball@3.0.9':
     dependencies:
@@ -6416,24 +6446,43 @@ snapshots:
     dependencies:
       playwright: 1.38.1
 
-  '@radix-ui/react-compose-refs@1.0.1(@types/react@18.2.22)(react@18.2.0)':
+  '@radix-ui/react-compose-refs@1.0.1(@types/react@18.3.23)(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.22.15
-      '@types/react': 18.2.22
-      react: 18.2.0
+      react: 18.3.1
+    optionalDependencies:
+      '@types/react': 18.3.23
 
-  '@radix-ui/react-slot@1.0.2(@types/react@18.2.22)(react@18.2.0)':
+  '@radix-ui/react-compose-refs@1.0.1(@types/react@19.1.6)(react@19.1.0)':
     dependencies:
       '@babel/runtime': 7.22.15
-      '@radix-ui/react-compose-refs': 1.0.1(@types/react@18.2.22)(react@18.2.0)
-      '@types/react': 18.2.22
-      react: 18.2.0
+      react: 19.1.0
+    optionalDependencies:
+      '@types/react': 19.1.6
 
-  '@rollup/pluginutils@5.1.0':
+  '@radix-ui/react-slot@1.0.2(@types/react@18.3.23)(react@18.3.1)':
+    dependencies:
+      '@babel/runtime': 7.22.15
+      '@radix-ui/react-compose-refs': 1.0.1(@types/react@18.3.23)(react@18.3.1)
+      react: 18.3.1
+    optionalDependencies:
+      '@types/react': 18.3.23
+
+  '@radix-ui/react-slot@1.0.2(@types/react@19.1.6)(react@19.1.0)':
+    dependencies:
+      '@babel/runtime': 7.22.15
+      '@radix-ui/react-compose-refs': 1.0.1(@types/react@19.1.6)(react@19.1.0)
+      react: 19.1.0
+    optionalDependencies:
+      '@types/react': 19.1.6
+
+  '@rollup/pluginutils@5.1.0(rollup@4.13.0)':
     dependencies:
       '@types/estree': 1.0.5
       estree-walker: 2.0.2
       picomatch: 2.3.1
+    optionalDependencies:
+      rollup: 4.13.0
 
   '@rollup/rollup-android-arm-eabi@4.13.0':
     optional: true
@@ -6512,9 +6561,9 @@ snapshots:
       memoizerific: 1.11.3
       ts-dedent: 2.2.0
 
-  '@storybook/addon-controls@8.0.4(@types/react@18.2.22)(react-dom@18.2.0)(react@18.2.0)':
+  '@storybook/addon-controls@8.0.4(@types/react@19.1.6)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
     dependencies:
-      '@storybook/blocks': 8.0.4(@types/react@18.2.22)(react-dom@18.2.0)(react@18.2.0)
+      '@storybook/blocks': 8.0.4(@types/react@19.1.6)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       lodash: 4.17.21
       ts-dedent: 2.2.0
     transitivePeerDependencies:
@@ -6527,22 +6576,22 @@ snapshots:
   '@storybook/addon-docs@8.0.4':
     dependencies:
       '@babel/core': 7.24.3
-      '@mdx-js/react': 3.0.1(@types/react@18.2.22)(react@18.2.0)
-      '@storybook/blocks': 8.0.4(@types/react@18.2.22)(react-dom@18.2.0)(react@18.2.0)
+      '@mdx-js/react': 3.0.1(@types/react@18.3.23)(react@18.3.1)
+      '@storybook/blocks': 8.0.4(@types/react@18.3.23)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@storybook/client-logger': 8.0.4
-      '@storybook/components': 8.0.4(@types/react@18.2.22)(react-dom@18.2.0)(react@18.2.0)
+      '@storybook/components': 8.0.4(@types/react@18.3.23)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@storybook/csf-plugin': 8.0.4
       '@storybook/csf-tools': 8.0.4
       '@storybook/global': 5.0.0
       '@storybook/node-logger': 8.0.4
       '@storybook/preview-api': 8.0.4
-      '@storybook/react-dom-shim': 8.0.4(react-dom@18.2.0)(react@18.2.0)
-      '@storybook/theming': 8.0.4(react-dom@18.2.0)(react@18.2.0)
+      '@storybook/react-dom-shim': 8.0.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@storybook/theming': 8.0.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@storybook/types': 8.0.4
-      '@types/react': 18.2.22
+      '@types/react': 18.3.23
       fs-extra: 11.2.0
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
       rehype-external-links: 3.0.0
       rehype-slug: 6.0.0
       ts-dedent: 2.2.0
@@ -6550,11 +6599,11 @@ snapshots:
       - encoding
       - supports-color
 
-  '@storybook/addon-essentials@8.0.4(@types/react@18.2.22)(react-dom@18.2.0)(react@18.2.0)':
+  '@storybook/addon-essentials@8.0.4(@types/react@19.1.6)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
     dependencies:
       '@storybook/addon-actions': 8.0.4
       '@storybook/addon-backgrounds': 8.0.4
-      '@storybook/addon-controls': 8.0.4(@types/react@18.2.22)(react-dom@18.2.0)(react@18.2.0)
+      '@storybook/addon-controls': 8.0.4(@types/react@19.1.6)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@storybook/addon-docs': 8.0.4
       '@storybook/addon-highlight': 8.0.4
       '@storybook/addon-measure': 8.0.4
@@ -6562,7 +6611,7 @@ snapshots:
       '@storybook/addon-toolbars': 8.0.4
       '@storybook/addon-viewport': 8.0.4
       '@storybook/core-common': 8.0.4
-      '@storybook/manager-api': 8.0.4(react-dom@18.2.0)(react@18.2.0)
+      '@storybook/manager-api': 8.0.4(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@storybook/node-logger': 8.0.4
       '@storybook/preview-api': 8.0.4
       ts-dedent: 2.2.0
@@ -6577,11 +6626,11 @@ snapshots:
     dependencies:
       '@storybook/global': 5.0.0
 
-  '@storybook/addon-interactions@8.0.4(jest@29.7.0)':
+  '@storybook/addon-interactions@8.0.4(@jest/globals@29.7.0)(jest@29.7.0(@types/node@20.8.4))':
     dependencies:
       '@storybook/global': 5.0.0
       '@storybook/instrumenter': 8.0.4
-      '@storybook/test': 8.0.4(jest@29.7.0)
+      '@storybook/test': 8.0.4(@jest/globals@29.7.0)(jest@29.7.0(@types/node@20.8.4))
       '@storybook/types': 8.0.4
       polished: 4.3.1
       ts-dedent: 2.2.0
@@ -6592,12 +6641,13 @@ snapshots:
       - jest
       - vitest
 
-  '@storybook/addon-links@8.0.4(react@18.2.0)':
+  '@storybook/addon-links@8.0.4(react@19.1.0)':
     dependencies:
       '@storybook/csf': 0.1.3
       '@storybook/global': 5.0.0
-      react: 18.2.0
       ts-dedent: 2.2.0
+    optionalDependencies:
+      react: 19.1.0
 
   '@storybook/addon-measure@8.0.4':
     dependencies:
@@ -6617,34 +6667,69 @@ snapshots:
     dependencies:
       memoizerific: 1.11.3
 
-  '@storybook/blocks@8.0.4(@types/react@18.2.22)(react-dom@18.2.0)(react@18.2.0)':
+  '@storybook/blocks@8.0.4(@types/react@18.3.23)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@storybook/channels': 8.0.4
       '@storybook/client-logger': 8.0.4
-      '@storybook/components': 8.0.4(@types/react@18.2.22)(react-dom@18.2.0)(react@18.2.0)
+      '@storybook/components': 8.0.4(@types/react@18.3.23)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@storybook/core-events': 8.0.4
       '@storybook/csf': 0.1.3
       '@storybook/docs-tools': 8.0.4
       '@storybook/global': 5.0.0
-      '@storybook/icons': 1.2.9(react-dom@18.2.0)(react@18.2.0)
-      '@storybook/manager-api': 8.0.4(react-dom@18.2.0)(react@18.2.0)
+      '@storybook/icons': 1.2.9(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@storybook/manager-api': 8.0.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@storybook/preview-api': 8.0.4
-      '@storybook/theming': 8.0.4(react-dom@18.2.0)(react@18.2.0)
+      '@storybook/theming': 8.0.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@storybook/types': 8.0.4
       '@types/lodash': 4.17.0
       color-convert: 2.0.1
       dequal: 2.0.3
       lodash: 4.17.21
-      markdown-to-jsx: 7.3.2(react@18.2.0)
+      markdown-to-jsx: 7.3.2(react@18.3.1)
       memoizerific: 1.11.3
       polished: 4.3.1
-      react: 18.2.0
-      react-colorful: 5.6.1(react-dom@18.2.0)(react@18.2.0)
-      react-dom: 18.2.0(react@18.2.0)
+      react-colorful: 5.6.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       telejson: 7.2.0
       tocbot: 4.25.0
       ts-dedent: 2.2.0
       util-deprecate: 1.0.2
+    optionalDependencies:
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+    transitivePeerDependencies:
+      - '@types/react'
+      - encoding
+      - supports-color
+
+  '@storybook/blocks@8.0.4(@types/react@19.1.6)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
+    dependencies:
+      '@storybook/channels': 8.0.4
+      '@storybook/client-logger': 8.0.4
+      '@storybook/components': 8.0.4(@types/react@19.1.6)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@storybook/core-events': 8.0.4
+      '@storybook/csf': 0.1.3
+      '@storybook/docs-tools': 8.0.4
+      '@storybook/global': 5.0.0
+      '@storybook/icons': 1.2.9(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@storybook/manager-api': 8.0.4(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@storybook/preview-api': 8.0.4
+      '@storybook/theming': 8.0.4(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@storybook/types': 8.0.4
+      '@types/lodash': 4.17.0
+      color-convert: 2.0.1
+      dequal: 2.0.3
+      lodash: 4.17.21
+      markdown-to-jsx: 7.3.2(react@19.1.0)
+      memoizerific: 1.11.3
+      polished: 4.3.1
+      react-colorful: 5.6.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      telejson: 7.2.0
+      tocbot: 4.25.0
+      ts-dedent: 2.2.0
+      util-deprecate: 1.0.2
+    optionalDependencies:
+      react: 19.1.0
+      react-dom: 19.1.0(react@19.1.0)
     transitivePeerDependencies:
       - '@types/react'
       - encoding
@@ -6670,7 +6755,7 @@ snapshots:
       - encoding
       - supports-color
 
-  '@storybook/builder-vite@8.0.4(typescript@5.2.2)(vite@5.2.11)':
+  '@storybook/builder-vite@8.0.4(typescript@5.2.2)(vite@5.2.11(@types/node@20.8.4))':
     dependencies:
       '@storybook/channels': 8.0.4
       '@storybook/client-logger': 8.0.4
@@ -6689,8 +6774,9 @@ snapshots:
       fs-extra: 11.2.0
       magic-string: 0.30.8
       ts-dedent: 2.2.0
-      typescript: 5.2.2
       vite: 5.2.11(@types/node@20.8.4)
+    optionalDependencies:
+      typescript: 5.2.2
     transitivePeerDependencies:
       - encoding
       - supports-color
@@ -6703,7 +6789,7 @@ snapshots:
       telejson: 7.2.0
       tiny-invariant: 1.3.3
 
-  '@storybook/cli@8.0.4(react-dom@18.2.0)(react@18.2.0)':
+  '@storybook/cli@8.0.4(@babel/preset-env@7.24.3(@babel/core@7.24.3))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
     dependencies:
       '@babel/core': 7.24.3
       '@babel/types': 7.24.0
@@ -6711,7 +6797,7 @@ snapshots:
       '@storybook/codemod': 8.0.4
       '@storybook/core-common': 8.0.4
       '@storybook/core-events': 8.0.4
-      '@storybook/core-server': 8.0.4(react-dom@18.2.0)(react@18.2.0)
+      '@storybook/core-server': 8.0.4(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@storybook/csf-tools': 8.0.4
       '@storybook/node-logger': 8.0.4
       '@storybook/telemetry': 8.0.4
@@ -6730,7 +6816,7 @@ snapshots:
       get-npm-tarball-url: 2.1.0
       giget: 1.2.3
       globby: 11.1.0
-      jscodeshift: 0.15.2(@babel/preset-env@7.24.3)
+      jscodeshift: 0.15.2(@babel/preset-env@7.24.3(@babel/core@7.24.3))
       leven: 3.1.0
       ora: 5.4.1
       prettier: 3.2.5
@@ -6766,7 +6852,7 @@ snapshots:
       '@types/cross-spawn': 6.0.6
       cross-spawn: 7.0.3
       globby: 11.1.0
-      jscodeshift: 0.15.2(@babel/preset-env@7.24.3)
+      jscodeshift: 0.15.2(@babel/preset-env@7.24.3(@babel/core@7.24.3))
       lodash: 4.17.21
       prettier: 3.2.5
       recast: 0.23.6
@@ -6774,18 +6860,34 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@storybook/components@8.0.4(@types/react@18.2.22)(react-dom@18.2.0)(react@18.2.0)':
+  '@storybook/components@8.0.4(@types/react@18.3.23)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@radix-ui/react-slot': 1.0.2(@types/react@18.2.22)(react@18.2.0)
+      '@radix-ui/react-slot': 1.0.2(@types/react@18.3.23)(react@18.3.1)
       '@storybook/client-logger': 8.0.4
       '@storybook/csf': 0.1.3
       '@storybook/global': 5.0.0
-      '@storybook/icons': 1.2.9(react-dom@18.2.0)(react@18.2.0)
-      '@storybook/theming': 8.0.4(react-dom@18.2.0)(react@18.2.0)
+      '@storybook/icons': 1.2.9(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@storybook/theming': 8.0.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@storybook/types': 8.0.4
       memoizerific: 1.11.3
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+      util-deprecate: 1.0.2
+    transitivePeerDependencies:
+      - '@types/react'
+
+  '@storybook/components@8.0.4(@types/react@19.1.6)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
+    dependencies:
+      '@radix-ui/react-slot': 1.0.2(@types/react@19.1.6)(react@19.1.0)
+      '@storybook/client-logger': 8.0.4
+      '@storybook/csf': 0.1.3
+      '@storybook/global': 5.0.0
+      '@storybook/icons': 1.2.9(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@storybook/theming': 8.0.4(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@storybook/types': 8.0.4
+      memoizerific: 1.11.3
+      react: 19.1.0
+      react-dom: 19.1.0(react@19.1.0)
       util-deprecate: 1.0.2
     transitivePeerDependencies:
       - '@types/react'
@@ -6828,7 +6930,7 @@ snapshots:
     dependencies:
       ts-dedent: 2.2.0
 
-  '@storybook/core-server@8.0.4(react-dom@18.2.0)(react@18.2.0)':
+  '@storybook/core-server@8.0.4(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
     dependencies:
       '@aw-web-design/x-default-browser': 1.4.126
       '@babel/core': 7.24.3
@@ -6842,7 +6944,7 @@ snapshots:
       '@storybook/docs-mdx': 3.0.0
       '@storybook/global': 5.0.0
       '@storybook/manager': 8.0.4
-      '@storybook/manager-api': 8.0.4(react-dom@18.2.0)(react@18.2.0)
+      '@storybook/manager-api': 8.0.4(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@storybook/node-logger': 8.0.4
       '@storybook/preview-api': 8.0.4
       '@storybook/telemetry': 8.0.4
@@ -6927,10 +7029,15 @@ snapshots:
 
   '@storybook/global@5.0.0': {}
 
-  '@storybook/icons@1.2.9(react-dom@18.2.0)(react@18.2.0)':
+  '@storybook/icons@1.2.9(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+
+  '@storybook/icons@1.2.9(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
+    dependencies:
+      react: 19.1.0
+      react-dom: 19.1.0(react@19.1.0)
 
   '@storybook/instrumenter@8.0.4':
     dependencies:
@@ -6942,16 +7049,37 @@ snapshots:
       '@vitest/utils': 1.4.0
       util: 0.12.5
 
-  '@storybook/manager-api@8.0.4(react-dom@18.2.0)(react@18.2.0)':
+  '@storybook/manager-api@8.0.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@storybook/channels': 8.0.4
       '@storybook/client-logger': 8.0.4
       '@storybook/core-events': 8.0.4
       '@storybook/csf': 0.1.3
       '@storybook/global': 5.0.0
-      '@storybook/icons': 1.2.9(react-dom@18.2.0)(react@18.2.0)
+      '@storybook/icons': 1.2.9(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@storybook/router': 8.0.4
-      '@storybook/theming': 8.0.4(react-dom@18.2.0)(react@18.2.0)
+      '@storybook/theming': 8.0.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@storybook/types': 8.0.4
+      dequal: 2.0.3
+      lodash: 4.17.21
+      memoizerific: 1.11.3
+      store2: 2.14.3
+      telejson: 7.2.0
+      ts-dedent: 2.2.0
+    transitivePeerDependencies:
+      - react
+      - react-dom
+
+  '@storybook/manager-api@8.0.4(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
+    dependencies:
+      '@storybook/channels': 8.0.4
+      '@storybook/client-logger': 8.0.4
+      '@storybook/core-events': 8.0.4
+      '@storybook/csf': 0.1.3
+      '@storybook/global': 5.0.0
+      '@storybook/icons': 1.2.9(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@storybook/router': 8.0.4
+      '@storybook/theming': 8.0.4(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@storybook/types': 8.0.4
       dequal: 2.0.3
       lodash: 4.17.21
@@ -6986,23 +7114,28 @@ snapshots:
 
   '@storybook/preview@8.0.4': {}
 
-  '@storybook/react-dom-shim@8.0.4(react-dom@18.2.0)(react@18.2.0)':
+  '@storybook/react-dom-shim@8.0.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
 
-  '@storybook/react-vite@8.0.4(react-dom@18.2.0)(react@18.2.0)(typescript@5.2.2)(vite@5.2.11)':
+  '@storybook/react-dom-shim@8.0.4(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
     dependencies:
-      '@joshwooding/vite-plugin-react-docgen-typescript': 0.3.0(typescript@5.2.2)(vite@5.2.11)
-      '@rollup/pluginutils': 5.1.0
-      '@storybook/builder-vite': 8.0.4(typescript@5.2.2)(vite@5.2.11)
+      react: 19.1.0
+      react-dom: 19.1.0(react@19.1.0)
+
+  '@storybook/react-vite@8.0.4(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(rollup@4.13.0)(typescript@5.2.2)(vite@5.2.11(@types/node@20.8.4))':
+    dependencies:
+      '@joshwooding/vite-plugin-react-docgen-typescript': 0.3.0(typescript@5.2.2)(vite@5.2.11(@types/node@20.8.4))
+      '@rollup/pluginutils': 5.1.0(rollup@4.13.0)
+      '@storybook/builder-vite': 8.0.4(typescript@5.2.2)(vite@5.2.11(@types/node@20.8.4))
       '@storybook/node-logger': 8.0.4
-      '@storybook/react': 8.0.4(react-dom@18.2.0)(react@18.2.0)(typescript@5.2.2)
+      '@storybook/react': 8.0.4(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(typescript@5.2.2)
       find-up: 5.0.0
       magic-string: 0.30.8
-      react: 18.2.0
+      react: 19.1.0
       react-docgen: 7.0.3
-      react-dom: 18.2.0(react@18.2.0)
+      react-dom: 19.1.0(react@19.1.0)
       resolve: 1.22.8
       tsconfig-paths: 4.2.0
       vite: 5.2.11(@types/node@20.8.4)
@@ -7014,13 +7147,13 @@ snapshots:
       - typescript
       - vite-plugin-glimmerx
 
-  '@storybook/react@8.0.4(react-dom@18.2.0)(react@18.2.0)(typescript@5.2.2)':
+  '@storybook/react@8.0.4(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(typescript@5.2.2)':
     dependencies:
       '@storybook/client-logger': 8.0.4
       '@storybook/docs-tools': 8.0.4
       '@storybook/global': 5.0.0
       '@storybook/preview-api': 8.0.4
-      '@storybook/react-dom-shim': 8.0.4(react-dom@18.2.0)(react@18.2.0)
+      '@storybook/react-dom-shim': 8.0.4(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@storybook/types': 8.0.4
       '@types/escodegen': 0.0.6
       '@types/estree': 0.0.51
@@ -7032,14 +7165,15 @@ snapshots:
       html-tags: 3.3.1
       lodash: 4.17.21
       prop-types: 15.8.1
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-      react-element-to-jsx-string: 15.0.0(react-dom@18.2.0)(react@18.2.0)
+      react: 19.1.0
+      react-dom: 19.1.0(react@19.1.0)
+      react-element-to-jsx-string: 15.0.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       semver: 7.6.0
       ts-dedent: 2.2.0
       type-fest: 2.19.0
-      typescript: 5.2.2
       util-deprecate: 1.0.2
+    optionalDependencies:
+      typescript: 5.2.2
     transitivePeerDependencies:
       - encoding
       - supports-color
@@ -7082,10 +7216,10 @@ snapshots:
       jest-circus: 29.7.0
       jest-environment-node: 29.7.0
       jest-junit: 16.0.0
-      jest-playwright-preset: 4.0.0(jest-circus@29.7.0)(jest-environment-node@29.7.0)(jest-runner@29.7.0)(jest@29.7.0)
+      jest-playwright-preset: 4.0.0(jest-circus@29.7.0)(jest-environment-node@29.7.0)(jest-runner@29.7.0)(jest@29.7.0(@types/node@20.8.4))
       jest-runner: 29.7.0
       jest-serializer-html: 7.1.0
-      jest-watch-typeahead: 2.2.2(jest@29.7.0)
+      jest-watch-typeahead: 2.2.2(jest@29.7.0(@types/node@20.8.4))
       playwright: 1.42.1
     transitivePeerDependencies:
       - '@swc/helpers'
@@ -7097,14 +7231,14 @@ snapshots:
       - supports-color
       - ts-node
 
-  '@storybook/test@8.0.4(jest@29.7.0)':
+  '@storybook/test@8.0.4(@jest/globals@29.7.0)(jest@29.7.0(@types/node@20.8.4))':
     dependencies:
       '@storybook/client-logger': 8.0.4
       '@storybook/core-events': 8.0.4
       '@storybook/instrumenter': 8.0.4
       '@storybook/preview-api': 8.0.4
       '@testing-library/dom': 9.3.4
-      '@testing-library/jest-dom': 6.4.2(jest@29.7.0)
+      '@testing-library/jest-dom': 6.4.2(@jest/globals@29.7.0)(jest@29.7.0(@types/node@20.8.4))
       '@testing-library/user-event': 14.5.2(@testing-library/dom@9.3.4)
       '@vitest/expect': 1.3.1
       '@vitest/spy': 1.4.0
@@ -7117,14 +7251,25 @@ snapshots:
       - jest
       - vitest
 
-  '@storybook/theming@8.0.4(react-dom@18.2.0)(react@18.2.0)':
+  '@storybook/theming@8.0.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@emotion/use-insertion-effect-with-fallbacks': 1.0.1(react@18.2.0)
+      '@emotion/use-insertion-effect-with-fallbacks': 1.0.1(react@18.3.1)
       '@storybook/client-logger': 8.0.4
       '@storybook/global': 5.0.0
       memoizerific: 1.11.3
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
+    optionalDependencies:
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+
+  '@storybook/theming@8.0.4(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
+    dependencies:
+      '@emotion/use-insertion-effect-with-fallbacks': 1.0.1(react@19.1.0)
+      '@storybook/client-logger': 8.0.4
+      '@storybook/global': 5.0.0
+      memoizerific: 1.11.3
+    optionalDependencies:
+      react: 19.1.0
+      react-dom: 19.1.0(react@19.1.0)
 
   '@storybook/types@8.0.4':
     dependencies:
@@ -7193,21 +7338,21 @@ snapshots:
 
   '@tanstack/history@1.15.13': {}
 
-  '@tanstack/react-router@1.22.3(react-dom@18.2.0)(react@18.2.0)':
+  '@tanstack/react-router@1.22.3(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
     dependencies:
       '@tanstack/history': 1.15.13
-      '@tanstack/react-store': 0.2.1(react-dom@18.2.0)(react@18.2.0)
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
+      '@tanstack/react-store': 0.2.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      react: 19.1.0
+      react-dom: 19.1.0(react@19.1.0)
       tiny-invariant: 1.3.3
       tiny-warning: 1.0.3
 
-  '@tanstack/react-store@0.2.1(react-dom@18.2.0)(react@18.2.0)':
+  '@tanstack/react-store@0.2.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
     dependencies:
       '@tanstack/store': 0.1.3
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-      use-sync-external-store: 1.2.0(react@18.2.0)
+      react: 19.1.0
+      react-dom: 19.1.0(react@19.1.0)
+      use-sync-external-store: 1.2.0(react@19.1.0)
 
   '@tanstack/router-generator@1.20.5':
     dependencies:
@@ -7231,7 +7376,7 @@ snapshots:
       lz-string: 1.5.0
       pretty-format: 27.5.1
 
-  '@testing-library/jest-dom@6.4.2(jest@29.7.0)':
+  '@testing-library/jest-dom@6.4.2(@jest/globals@29.7.0)(jest@29.7.0(@types/node@20.8.4))':
     dependencies:
       '@adobe/css-tools': 4.3.3
       '@babel/runtime': 7.24.1
@@ -7239,9 +7384,11 @@ snapshots:
       chalk: 3.0.0
       css.escape: 1.5.1
       dom-accessibility-api: 0.6.3
-      jest: 29.7.0(@types/node@20.8.4)
       lodash: 4.17.21
       redent: 3.0.0
+    optionalDependencies:
+      '@jest/globals': 29.7.0
+      jest: 29.7.0(@types/node@20.8.4)
 
   '@testing-library/user-event@14.5.2(@testing-library/dom@9.3.4)':
     dependencies:
@@ -7374,19 +7521,20 @@ snapshots:
 
   '@types/range-parser@1.2.7': {}
 
-  '@types/react-dom@18.2.7':
+  '@types/react-dom@19.1.5(@types/react@19.1.6)':
     dependencies:
-      '@types/react': 18.2.22
+      '@types/react': 19.1.6
 
-  '@types/react@18.2.22':
+  '@types/react@18.3.23':
     dependencies:
       '@types/prop-types': 15.7.6
-      '@types/scheduler': 0.16.3
-      csstype: 3.1.2
+      csstype: 3.1.3
+
+  '@types/react@19.1.6':
+    dependencies:
+      csstype: 3.1.3
 
   '@types/resolve@1.20.6': {}
-
-  '@types/scheduler@0.16.3': {}
 
   '@types/semver@7.5.2': {}
 
@@ -7419,7 +7567,7 @@ snapshots:
     dependencies:
       '@types/yargs-parser': 21.0.3
 
-  '@typescript-eslint/eslint-plugin@7.3.1(@typescript-eslint/parser@7.3.1)(eslint@8.57.0)(typescript@5.2.2)':
+  '@typescript-eslint/eslint-plugin@7.3.1(@typescript-eslint/parser@7.3.1(eslint@8.57.0)(typescript@5.2.2))(eslint@8.57.0)(typescript@5.2.2)':
     dependencies:
       '@eslint-community/regexpp': 4.8.1
       '@typescript-eslint/parser': 7.3.1(eslint@8.57.0)(typescript@5.2.2)
@@ -7434,6 +7582,7 @@ snapshots:
       natural-compare: 1.4.0
       semver: 7.5.4
       ts-api-utils: 1.0.3(typescript@5.2.2)
+    optionalDependencies:
       typescript: 5.2.2
     transitivePeerDependencies:
       - supports-color
@@ -7446,6 +7595,7 @@ snapshots:
       '@typescript-eslint/visitor-keys': 7.3.1
       debug: 4.3.4
       eslint: 8.57.0
+    optionalDependencies:
       typescript: 5.2.2
     transitivePeerDependencies:
       - supports-color
@@ -7467,6 +7617,7 @@ snapshots:
       debug: 4.3.4
       eslint: 8.57.0
       ts-api-utils: 1.0.3(typescript@5.2.2)
+    optionalDependencies:
       typescript: 5.2.2
     transitivePeerDependencies:
       - supports-color
@@ -7484,6 +7635,7 @@ snapshots:
       is-glob: 4.0.3
       semver: 7.5.4
       tsutils: 3.21.0(typescript@5.2.2)
+    optionalDependencies:
       typescript: 5.2.2
     transitivePeerDependencies:
       - supports-color
@@ -7498,6 +7650,7 @@ snapshots:
       minimatch: 9.0.3
       semver: 7.5.4
       ts-api-utils: 1.0.3(typescript@5.2.2)
+    optionalDependencies:
       typescript: 5.2.2
     transitivePeerDependencies:
       - supports-color
@@ -7590,7 +7743,7 @@ snapshots:
 
   '@vanilla-extract/private@1.0.3': {}
 
-  '@vanilla-extract/vite-plugin@4.0.6(@types/node@20.8.4)(vite@5.2.11)':
+  '@vanilla-extract/vite-plugin@4.0.6(@types/node@20.8.4)(vite@5.2.11(@types/node@20.8.4))':
     dependencies:
       '@vanilla-extract/integration': 7.1.1(@types/node@20.8.4)
       vite: 5.2.11(@types/node@20.8.4)
@@ -7604,7 +7757,7 @@ snapshots:
       - supports-color
       - terser
 
-  '@vitejs/plugin-react-swc@3.6.0(vite@5.2.11)':
+  '@vitejs/plugin-react-swc@3.6.0(vite@5.2.11(@types/node@20.8.4))':
     dependencies:
       '@swc/core': 1.4.8
       vite: 5.2.11(@types/node@20.8.4)
@@ -8163,6 +8316,8 @@ snapshots:
   cssesc@3.0.0: {}
 
   csstype@3.1.2: {}
+
+  csstype@3.1.3: {}
 
   cwd@0.10.0:
     dependencies:
@@ -9340,7 +9495,6 @@ snapshots:
       '@babel/core': 7.24.3
       '@jest/test-sequencer': 29.7.0
       '@jest/types': 29.6.3
-      '@types/node': 20.8.4
       babel-jest: 29.7.0(@babel/core@7.24.3)
       chalk: 4.1.2
       ci-info: 3.9.0
@@ -9360,6 +9514,8 @@ snapshots:
       pretty-format: 29.7.0
       slash: 3.0.0
       strip-json-comments: 3.1.1
+    optionalDependencies:
+      '@types/node': 20.8.4
     transitivePeerDependencies:
       - babel-plugin-macros
       - supports-color
@@ -9447,7 +9603,7 @@ snapshots:
       '@types/node': 20.8.4
       jest-util: 29.7.0
 
-  jest-playwright-preset@4.0.0(jest-circus@29.7.0)(jest-environment-node@29.7.0)(jest-runner@29.7.0)(jest@29.7.0):
+  jest-playwright-preset@4.0.0(jest-circus@29.7.0)(jest-environment-node@29.7.0)(jest-runner@29.7.0)(jest@29.7.0(@types/node@20.8.4)):
     dependencies:
       expect-playwright: 0.8.0
       jest: 29.7.0(@types/node@20.8.4)
@@ -9464,7 +9620,7 @@ snapshots:
       - supports-color
 
   jest-pnp-resolver@1.2.3(jest-resolve@29.7.0):
-    dependencies:
+    optionalDependencies:
       jest-resolve: 29.7.0
 
   jest-process-manager@0.4.0:
@@ -9604,7 +9760,7 @@ snapshots:
       leven: 3.1.0
       pretty-format: 29.7.0
 
-  jest-watch-typeahead@2.2.2(jest@29.7.0):
+  jest-watch-typeahead@2.2.2(jest@29.7.0(@types/node@20.8.4)):
     dependencies:
       ansi-escapes: 6.2.1
       chalk: 5.3.0
@@ -9664,7 +9820,7 @@ snapshots:
     dependencies:
       argparse: 2.0.1
 
-  jscodeshift@0.15.2(@babel/preset-env@7.24.3):
+  jscodeshift@0.15.2(@babel/preset-env@7.24.3(@babel/core@7.24.3)):
     dependencies:
       '@babel/core': 7.24.3
       '@babel/parser': 7.24.1
@@ -9673,7 +9829,6 @@ snapshots:
       '@babel/plugin-transform-nullish-coalescing-operator': 7.24.1(@babel/core@7.24.3)
       '@babel/plugin-transform-optional-chaining': 7.24.1(@babel/core@7.24.3)
       '@babel/plugin-transform-private-methods': 7.24.1(@babel/core@7.24.3)
-      '@babel/preset-env': 7.24.3(@babel/core@7.24.3)
       '@babel/preset-flow': 7.24.1(@babel/core@7.24.3)
       '@babel/preset-typescript': 7.24.1(@babel/core@7.24.3)
       '@babel/register': 7.23.7(@babel/core@7.24.3)
@@ -9687,6 +9842,8 @@ snapshots:
       recast: 0.23.6
       temp: 0.8.4
       write-file-atomic: 2.4.3
+    optionalDependencies:
+      '@babel/preset-env': 7.24.3(@babel/core@7.24.3)
     transitivePeerDependencies:
       - supports-color
 
@@ -9810,9 +9967,13 @@ snapshots:
 
   map-or-similar@1.5.0: {}
 
-  markdown-to-jsx@7.3.2(react@18.2.0):
+  markdown-to-jsx@7.3.2(react@18.3.1):
     dependencies:
-      react: 18.2.0
+      react: 18.3.1
+
+  markdown-to-jsx@7.3.2(react@19.1.0):
+    dependencies:
+      react: 19.1.0
 
   media-query-parser@2.0.2:
     dependencies:
@@ -10294,14 +10455,19 @@ snapshots:
       iconv-lite: 0.4.24
       unpipe: 1.0.0
 
-  react-colorful@5.6.1(react-dom@18.2.0)(react@18.2.0):
+  react-colorful@5.6.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
 
-  react-confetti@6.1.0(react@18.2.0):
+  react-colorful@5.6.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0):
     dependencies:
-      react: 18.2.0
+      react: 19.1.0
+      react-dom: 19.1.0(react@19.1.0)
+
+  react-confetti@6.1.0(react@19.1.0):
+    dependencies:
+      react: 19.1.0
       tween-functions: 1.2.0
 
   react-docgen-typescript@2.2.2(typescript@5.2.2):
@@ -10323,18 +10489,23 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  react-dom@18.2.0(react@18.2.0):
+  react-dom@18.3.1(react@18.3.1):
     dependencies:
       loose-envify: 1.4.0
-      react: 18.2.0
-      scheduler: 0.23.0
+      react: 18.3.1
+      scheduler: 0.23.2
 
-  react-element-to-jsx-string@15.0.0(react-dom@18.2.0)(react@18.2.0):
+  react-dom@19.1.0(react@19.1.0):
+    dependencies:
+      react: 19.1.0
+      scheduler: 0.26.0
+
+  react-element-to-jsx-string@15.0.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0):
     dependencies:
       '@base2/pretty-print-object': 1.0.1
       is-plain-object: 5.0.0
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
+      react: 19.1.0
+      react-dom: 19.1.0(react@19.1.0)
       react-is: 18.1.0
 
   react-is@16.13.1: {}
@@ -10343,9 +10514,11 @@ snapshots:
 
   react-is@18.1.0: {}
 
-  react@18.2.0:
+  react@18.3.1:
     dependencies:
       loose-envify: 1.4.0
+
+  react@19.1.0: {}
 
   read-pkg-up@7.0.1:
     dependencies:
@@ -10524,9 +10697,11 @@ snapshots:
 
   safer-buffer@2.1.2: {}
 
-  scheduler@0.23.0:
+  scheduler@0.23.2:
     dependencies:
       loose-envify: 1.4.0
+
+  scheduler@0.26.0: {}
 
   semver@5.7.2: {}
 
@@ -10681,9 +10856,9 @@ snapshots:
 
   store2@2.14.3: {}
 
-  storybook@8.0.4(react-dom@18.2.0)(react@18.2.0):
+  storybook@8.0.4(@babel/preset-env@7.24.3(@babel/core@7.24.3))(react-dom@19.1.0(react@19.1.0))(react@19.1.0):
     dependencies:
-      '@storybook/cli': 8.0.4(react-dom@18.2.0)(react@18.2.0)
+      '@storybook/cli': 8.0.4(@babel/preset-env@7.24.3(@babel/core@7.24.3))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
     transitivePeerDependencies:
       - '@babel/preset-env'
       - bufferutil
@@ -10958,9 +11133,9 @@ snapshots:
     dependencies:
       punycode: 2.3.0
 
-  use-sync-external-store@1.2.0(react@18.2.0):
+  use-sync-external-store@1.2.0(react@19.1.0):
     dependencies:
-      react: 18.2.0
+      react: 19.1.0
 
   util-deprecate@1.0.2: {}
 
@@ -11010,11 +11185,11 @@ snapshots:
 
   vite@5.2.11(@types/node@20.8.4):
     dependencies:
-      '@types/node': 20.8.4
       esbuild: 0.20.2
       postcss: 8.4.38
       rollup: 4.13.0
     optionalDependencies:
+      '@types/node': 20.8.4
       fsevents: 2.3.3
 
   wait-on@7.2.0:
