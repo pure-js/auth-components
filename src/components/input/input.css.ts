@@ -19,10 +19,6 @@ export const invalidTxt = style({
   color: 'red',
 });
 
-export const kraken = style({
-  backgroundColor: 'green',
-});
-
 export const label = style({
   transition: 'color 0.3s',
   boxSizing: 'border-box',
