@@ -1,13 +1,13 @@
-name: Code Linting
+name: ESLint Code Linting
 
 on: push
 
 jobs:
-  lint:
+  eslint:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [20]
+        node-version: [22]
     steps:
       - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v4

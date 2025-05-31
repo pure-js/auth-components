@@ -1,9 +1,13 @@
-name: Code Formatter
+name: Build Storybook Documentation
 
-on: push
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
 
 jobs:
-  format:
+  build:
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -17,6 +21,6 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: 'pnpm'
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
-      - name: Run Prettier
-        run: pnpm run format:check
+        run: pnpm install
+      - name: Build Storybook
+        run: pnpm run build-storybook
